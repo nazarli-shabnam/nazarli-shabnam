@@ -24,7 +24,7 @@
 ---
 
 ## 🎧 Now Playing
-![Spotify Playing](https://spotify-github-profile.vercel.app/api/view?uid=YOUR_SPOTIFY_ID&cover_image=true&theme=novatorem)
+![Spotify Playing](https://spotify-github-profile.vercel.app/api/view?uid=314dwcjemtfzwdygc76qr4ya5yhq&cover_image=true&theme=novatorem)
 
 ---
 
