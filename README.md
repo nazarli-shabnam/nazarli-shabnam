@@ -1,7 +1,7 @@
 # Hey, I'm Shabnam 👋
 > Backend Developer | AI Enthusiast | Night Owl 🦉
 
-![GitHub Banner](https://i.imgur.com/a/WGsyfoA.png)
+![GitHub Banner](https://imgur.com/a/WGsyfoA)
 
 ---
 
