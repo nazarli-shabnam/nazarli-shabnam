@@ -1,14 +1,32 @@
-## Hi there 👋
+# Hey, I'm Shabnam 👋
+> Backend Developer | AI Enthusiast | Night Owl 🦉
 
-**nazarli-shabnam/nazarli-shabnam** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+![GitHub Banner](https://i.imgur.com/YOURBANNER.png)
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+## 🧠 Tech Stack
+**Languages:** Python, TypeScript, C++  
+**Frameworks:** FastAPI, NestJS, Django  
+**Tools:** Docker, AWS, GitLab CI/CD  
+
+---
+
+## 📊 Stats
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&theme=tokyonight&show_icons=true)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight)
+
+---
+
+## 🎮 Play Chess with Me
+![chess board](https://github.com/YOUR_USERNAME/YOUR_USERNAME/blob/master/chessboard.svg)
+
+---
+
+## 🎧 Now Playing
+![Spotify Playing](https://spotify-github-profile.vercel.app/api/view?uid=YOUR_SPOTIFY_ID&cover_image=true&theme=novatorem)
+
+---
+
+## ✨ Random Dev Quote
+![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
