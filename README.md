@@ -13,13 +13,13 @@
 ---
 
 ## 📊 Stats
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&theme=tokyonight&show_icons=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=nazarli-shabnam&theme=tokyonight&show_icons=true)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nazarli-shabnam&layout=compact&theme=tokyonight)
 
 ---
 
 ## 🎮 Play Chess with Me
-![chess board](https://github.com/YOUR_USERNAME/YOUR_USERNAME/blob/master/chessboard.svg)
+![chess board](https://github.com/nazarli-shabnam/nazarli-shabnam/blob/master/chessboard.svg)
 
 ---
 
