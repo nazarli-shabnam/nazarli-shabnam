@@ -1,6 +1,8 @@
 # Hey, I'm Shabnam 👋
 > Backend Developer | AI Enthusiast | Night Owl 🦉
 
+> _“Beyond the screen, a universe of code.”_
+
 <!-- ![GitHub Banner](https://imgur.com/a/WGsyfoA) -->
 
 ---
@@ -13,9 +15,15 @@
 ---
 
 ## 📊 Stats
+<p align="center">
+  <!-- <img src="https://github-readme-stats.vercel.app/api?username=nazarli-shabnam&theme=tokyonight&show_icons=true" /> -->
+
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=nazarli-shabnam&theme=tokyonight&show_icons=true)
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nazarli-shabnam&layout=compact&theme=tokyonight)
+</p>
+
+
 
 ---
 
