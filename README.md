@@ -1,16 +1,17 @@
 # Hey, I'm Shabnam 👋
 > Backend Developer | AI Enthusiast | Night Owl 🦉
 
-> _“Beyond the screen, a universe of code.”_
+<!-- > _“Beyond the screen, a universe of code.”_ -->
 
 <!-- ![GitHub Banner](https://imgur.com/a/WGsyfoA) -->
 
 ---
 
-## 🧠 Tech Stack
-**Languages:** Python, TypeScript, C++  
-**Frameworks:** FastAPI, NestJS, Django  
-**Tools:** Docker, AWS, GitLab CI/CD  
+## 🧩 Tech Stack
+**Languages:** Python, TypeScript, JavaScript, C++  
+**Frameworks & Libraries:** FastAPI, NestJS, Django, Express.js, React  
+**Tools & Platforms:** Docker, AWS, GitLab CI/CD  
+**Focus Areas:** Backend Architecture, API Design, System Scalability 
 
 ---
 
@@ -30,7 +31,6 @@
 <!-- ## 🎮 Play Chess with Me
 ![chess board](https://github.com/nazarli-shabnam/nazarli-shabnam/blob/master/chessboard.svg) -->
 
----
 
 <!-- ## 🎧 Now Playing
 ![Spotify Playing](https://spotify-github-profile.vercel.app/api/view?uid=314dwcjemtfzwdygc76qr4ya5yhq&cover_image=true&theme=novatorem) -->
