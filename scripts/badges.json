@@ -1,61 +1,61 @@
 [
   {
     "slug": "a-commit",
-    "title": "One of my commits starts with 'a'",
+    "title": "One of my commit sha starts with \"a\".",
     "desc": "One of my commit SHAs starts with the letter 'a'.",
     "openmoji": "1F170"
   },
   {
     "slug": "1571-commit",
     "title": "1571 — historical commit",
-    "desc": "1571 — Osmanlı İmparatorluğu için büyük bir toprak kazanımı ile önemli bir deniz mağlubiyetinin yaşandığı tarihi bir dönüm noktasıdır.",
+    "desc": "1571 — This was a historic turning point for the Ottoman Empire, marked by both significant territorial gains and a major naval defeat.",
     "openmoji": "1F3F0"
   },
   {
     "slug": "stars-4",
-    "title": "I collected 4 stars",
+    "title": "I collected 4 stars.",
     "desc": "I have 4 stars across my repos.",
     "openmoji": "2B50"
   },
   {
     "slug": "tp-survivor",
-    "title": "Survivor of the Great TP Shortage",
+    "title": "I rolled before Covid-19: Survivor of the Great TP Shortage",
     "desc": "I rolled before Covid-19: Survivor of the Great TP Shortage.",
     "openmoji": "1F9FB"
   },
   {
     "slug": "bd-commit",
-    "title": "Committed on my birthday (Sept 23)",
-    "desc": "I committed on my birthday (September 23).",
+    "title": "I committed on my birthday",
+    "desc": "I committed on my birthday.",
     "openmoji": "1F382"
   },
   {
     "slug": "public-keys-2",
-    "title": "I have 2 public keys",
+    "title": "I have 2 public keys.",
     "desc": "I maintain two public SSH keys.",
     "openmoji": "1F511"
   },
   {
     "slug": "morning-commit",
-    "title": "I commit in the morning",
+    "title": "I commit in the morning.",
     "desc": "I often commit in the morning.",
     "openmoji": "1F305"
   },
   {
     "slug": "midnight-commit",
-    "title": "I commit at midnight",
+    "title": "I commit at midnight.",
     "desc": "I often commit at midnight.",
     "openmoji": "1F319"
   },
   {
     "slug": "new-year-commit",
-    "title": "Committed on New Year",
+    "title": "I committed on New Year's Day.",
     "desc": "I committed on New Year's Day.",
     "openmoji": "1F389"
   },
   {
     "slug": "favorite-word-add",
-    "title": "My favorite commit word is 'add'",
+    "title": "My favorite commit word is \"add\".",
     "desc": "My favorite commit message word is 'add'.",
     "openmoji": "2795"
   }
