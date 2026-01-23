@@ -37,13 +37,13 @@
 
 ## 📊 Stats
 
-<table role="presentation" style="width:100%;max-width:760px;margin:0 auto;border-collapse:collapse;">
+<table role="presentation" style="width:100%;max-width:760px;margin:0 auto;border-collapse:collapse;border:0;">
   <tr>
-    <td align="center" style="width:50%;padding:6px;vertical-align:top;">
-      <img src="https://github-readme-stats.vercel.app/api?username=nazarli-shabnam&theme=tokyonight&show_icons=true&hide_border=true" alt="GitHub stats" style="width:300px;max-width:100%;height:auto;border-radius:6px;" />
+    <td align="center" style="width:50%;padding:6px;vertical-align:top;border:0;">
+      <img src="https://github-readme-stats.vercel.app/api?username=nazarli-shabnam&theme=tokyonight&show_icons=true&hide_border=true&bg_color=transparent" alt="GitHub stats" style="width:300px;max-width:100%;height:auto;border-radius:6px;border:0;box-shadow:none;outline:0;background:transparent;display:block;" />
     </td>
-    <td align="center" style="width:50%;padding:6px;vertical-align:top;">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nazarli-shabnam&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" style="width:300px;max-width:100%;height:auto;border-radius:6px;" />
+    <td align="center" style="width:50%;padding:6px;vertical-align:top;border:0;">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nazarli-shabnam&layout=compact&theme=tokyonight&hide_border=true&bg_color=transparent" alt="Top Languages" style="width:300px;max-width:100%;height:auto;border-radius:6px;border:0;box-shadow:none;outline:0;background:transparent;display:block;" />
     </td>
   </tr>
 </table>
