@@ -1,0 +1,40 @@
+name: Regenerate On-Fire Badge
+
+on:
+  schedule:
+    - cron: "0 0 * * 0" # weekly on Sunday UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  regen-on-fire:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate on-fire badge
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+        run: |
+          node scripts/generate-on-fire.mjs
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add my-badges/on-fire-30.svg my-badges/on-fire-30.md || true
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update on-fire badge" || true
+            git push
+          else
+            echo "No changes to commit"
+          fi

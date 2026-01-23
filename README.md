@@ -17,6 +17,7 @@
 **Focus Areas:** Backend Architecture, API Design, System Scalability
 
 ---
+
 <!-- my-badges start -->
 <p align="center">
   <!-- generated badges -->
@@ -30,9 +31,9 @@
   <a href="my-badges/midnight-commit.md"><img src="my-badges/midnight-commit.svg" alt="I commit at midnight." title="I commit at midnight." width="64" /></a>
   <a href="my-badges/new-year-commit.md"><img src="my-badges/new-year-commit.svg" alt="I committed on New Year's Day." title="I committed on New Year's Day." width="64" /></a>
   <a href="my-badges/favorite-word-add.md"><img src="my-badges/favorite-word-add.svg" alt='My favorite commit word is "add".' title='My favorite commit word is "add".' width="64" /></a>
+  <a href="my-badges/on-fire-30.md"><img src="my-badges/on-fire-30.svg" alt="on fire (30d)" title="on fire (30d): generating..." width="64" /></a>
 </p>
 <!-- my-badges end -->
-
 
 ## 📊 Stats
 
@@ -64,4 +65,3 @@
 ## 🔗 Connect with Me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect%20with%20me-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/shabnamnazarli/)
-
