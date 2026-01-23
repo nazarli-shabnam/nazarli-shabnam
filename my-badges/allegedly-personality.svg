@@ -14,6 +14,13 @@
     <circle cx="32" cy="26" r="18" fill="#0b1220" opacity="0.85" />
   </g>
   <circle cx="32" cy="26" r="14" fill="#ffd166" />
-  <!-- OpenMoji image (smiling face with smiling eyes) embedded so no visible text appears in the badge -->
-  <image href="https://cdn.jsdelivr.net/npm/openmoji@14.0.0/color/svg/1F60A.svg" x="18" y="14" width="28" height="28" preserveAspectRatio="xMidYMid meet" />
+  <!-- Inlined slightly smiling face (U+1F642) adjusted to the badge head size -->
+  <!-- Badge head: center (32,26) radius 14; draw facial features relative to that -->
+  <g id="face-features">
+    <!-- eyes: small filled circles sized for the head -->
+    <circle cx="28.5" cy="22.5" r="1.6" fill="#000000" />
+    <circle cx="35.5" cy="22.5" r="1.6" fill="#000000" />
+    <!-- mouth: gentle curve sized to head, stroke-only -->
+    <path d="M27.5 29.2 Q32 32 36.5 29.2" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+  </g>
 </svg>
