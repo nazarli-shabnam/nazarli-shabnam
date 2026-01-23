@@ -1,6 +1,6 @@
 # Hey, I'm Shabnam 👋
 
-> Backend Developer | AI Enthusiast | Night Owl 🦉
+> Backend Developer | AI Enthusiast
 
 <!-- > _“Beyond the screen, a universe of code.”_ -->
 
@@ -52,15 +52,15 @@
 <!-- my-badges start -->
 <p align="center">
   <!-- generated badges -->
-  <a href="my-badges/a-commit.md"><img src="my-badges/a-commit.svg" alt="a-commit" width="64" /></a>
-  <a href="my-badges/1571-commit.md"><img src="my-badges/1571-commit.svg" alt="1571-commit" width="64" /></a>
-  <a href="my-badges/stars-4.md"><img src="my-badges/stars-4.svg" alt="stars-4" width="64" /></a>
-  <a href="my-badges/tp-survivor.md"><img src="my-badges/tp-survivor.svg" alt="tp-survivor" width="64" /></a>
-  <a href="my-badges/bd-commit.md"><img src="my-badges/bd-commit.svg" alt="bd-commit" width="64" /></a>
-  <a href="my-badges/public-keys-2.md"><img src="my-badges/public-keys-2.svg" alt="public-keys-2" width="64" /></a>
-  <a href="my-badges/morning-commit.md"><img src="my-badges/morning-commit.svg" alt="morning-commit" width="64" /></a>
-  <a href="my-badges/midnight-commit.md"><img src="my-badges/midnight-commit.svg" alt="midnight-commit" width="64" /></a>
-  <a href="my-badges/new-year-commit.md"><img src="my-badges/new-year-commit.svg" alt="new-year-commit" width="64" /></a>
-  <a href="my-badges/favorite-word-add.md"><img src="my-badges/favorite-word-add.svg" alt="favorite-word-add" width="64" /></a>
+  <a href="my-badges/a-commit.md"><img src="my-badges/a-commit.svg" alt="One of my commit sha starts with &quot;a&quot;." title="One of my commit sha starts with &quot;a&quot;." width="64" /></a>
+  <a href="my-badges/1571-commit.md"><img src="my-badges/1571-commit.svg" alt="1571 — historical commit" title="1571 — historical commit" width="64" /></a>
+  <a href="my-badges/stars-4.md"><img src="my-badges/stars-4.svg" alt="I collected 4 stars." title="I collected 4 stars." width="64" /></a>
+  <a href="my-badges/tp-survivor.md"><img src="my-badges/tp-survivor.svg" alt="I rolled before Covid-19: Survivor of the Great TP Shortage" title="I rolled before Covid-19: Survivor of the Great TP Shortage" width="64" /></a>
+  <a href="my-badges/bd-commit.md"><img src="my-badges/bd-commit.svg" alt="I committed on my birthday (Sept 23)." title="I committed on my birthday (Sept 23)." width="64" /></a>
+  <a href="my-badges/public-keys-2.md"><img src="my-badges/public-keys-2.svg" alt="I have 2 public keys." title="I have 2 public keys." width="64" /></a>
+  <a href="my-badges/morning-commit.md"><img src="my-badges/morning-commit.svg" alt="I commit in the morning." title="I commit in the morning." width="64" /></a>
+  <a href="my-badges/midnight-commit.md"><img src="my-badges/midnight-commit.svg" alt="I commit at midnight." title="I commit at midnight." width="64" /></a>
+  <a href="my-badges/new-year-commit.md"><img src="my-badges/new-year-commit.svg" alt="I committed on New Year's Day." title="I committed on New Year's Day." width="64" /></a>
+  <a href="my-badges/favorite-word-add.md"><img src="my-badges/favorite-word-add.svg" alt='My favorite commit word is "add".' title='My favorite commit word is "add".' width="64" /></a>
 </p>
 <!-- my-badges end -->
