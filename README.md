@@ -25,7 +25,7 @@
   <a href="my-badges/1571-commit.md"><img src="my-badges/1571-commit.svg" alt="1571 — historical commit" title="1571 — historical commit" width="64" /></a>
   <a href="my-badges/stars-4.md"><img src="my-badges/stars-4.svg" alt="I collected 4 stars." title="I collected 4 stars." width="64" /></a>
   <a href="my-badges/tp-survivor.md"><img src="my-badges/tp-survivor.svg" alt="I rolled before Covid-19: Survivor of the Great TP Shortage" title="I rolled before Covid-19: Survivor of the Great TP Shortage" width="64" /></a>
-  <a href="my-badges/bd-commit.md"><img src="my-badges/bd-commit.svg" alt="I committed on my birthday (Sept 23)." title="I committed on my birthday (Sept 23)." width="64" /></a>
+  <a href="my-badges/bd-commit.md"><img src="my-badges/bd-commit.svg" alt="I committed on my birthday." title="I committed on my birthday." width="64" /></a>
   <a href="my-badges/public-keys-2.md"><img src="my-badges/public-keys-2.svg" alt="I have 2 public keys." title="I have 2 public keys." width="64" /></a>
   <a href="my-badges/morning-commit.md"><img src="my-badges/morning-commit.svg" alt="I commit in the morning." title="I commit in the morning." width="64" /></a>
   <a href="my-badges/midnight-commit.md"><img src="my-badges/midnight-commit.svg" alt="I commit at midnight." title="I commit at midnight." width="64" /></a>
@@ -37,14 +37,14 @@
 
 ## 📊 Stats
 
-<p align="center">
-  <!-- <img src="https://github-readme-stats.vercel.app/api?username=nazarli-shabnam&theme=tokyonight&show_icons=true" /> -->
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=nazarli-shabnam&theme=tokyonight&show_icons=true)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nazarli-shabnam&layout=compact&theme=tokyonight)
-
-</p>
+<div style="display:flex;gap:16px;justify-content:center;align-items:flex-start;flex-wrap:wrap">
+  <div style="flex:1 1 320px;max-width:420px;min-width:260px">
+    <img src="https://github-readme-stats.vercel.app/api?username=nazarli-shabnam&theme=tokyonight&show_icons=true" alt="GitHub stats" style="width:100%;height:auto;border-radius:6px;" />
+  </div>
+  <div style="flex:1 1 320px;max-width:420px;min-width:260px">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nazarli-shabnam&layout=compact&theme=tokyonight" alt="Top Languages" style="width:100%;height:auto;border-radius:6px;" />
+  </div>
+</div>
 
 ---
 
