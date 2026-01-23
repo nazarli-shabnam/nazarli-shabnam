@@ -37,8 +37,6 @@
 
 ## 📊 Stats
 
-## 📊 Stats
-
 <table role="presentation" cellpadding="0" cellspacing="0" border="0"
   style="width:100%;max-width:760px;margin:0 auto;border:0;border-collapse:collapse;border-spacing:0;background:transparent;">
   <tr style="border:0;background:transparent;">
