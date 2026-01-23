@@ -8,6 +8,15 @@
 <p><sub><i>Allegedly, I have a great personality.</i></sub></p>
 
 ---
+
+## 🧩 Tech Stack
+
+**Languages:** Python, TypeScript, JavaScript, C++  
+**Frameworks & Libraries:** FastAPI, NestJS, Django, Express.js, React  
+**Tools & Platforms:** Docker, AWS, GitLab CI/CD  
+**Focus Areas:** Backend Architecture, API Design, System Scalability
+
+---
 <!-- my-badges start -->
 <p align="center">
   <!-- generated badges -->
@@ -23,14 +32,6 @@
   <a href="my-badges/favorite-word-add.md"><img src="my-badges/favorite-word-add.svg" alt='My favorite commit word is "add".' title='My favorite commit word is "add".' width="64" /></a>
 </p>
 <!-- my-badges end -->
----
-## 🧩 Tech Stack
-
-**Languages:** Python, TypeScript, JavaScript, C++  
-**Frameworks & Libraries:** FastAPI, NestJS, Django, Express.js, React  
-**Tools & Platforms:** Docker, AWS, GitLab CI/CD  
-**Focus Areas:** Backend Architecture, API Design, System Scalability
-
 ---
 
 ## 📊 Stats
