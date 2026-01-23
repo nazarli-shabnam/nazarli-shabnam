@@ -3,4 +3,4 @@ layout: default
 ---
 # 1571 — historical commit
 
-1571 — Osmanlı İmparatorluğu için büyük bir toprak kazanımı ile önemli bir deniz mağlubiyetinin yaşandığı tarihi bir dönüm noktasıdır.
+1571 — This was a historic turning point for the Ottoman Empire, marked by both significant territorial gains and a major naval defeat.

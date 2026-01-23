@@ -1,6 +1,6 @@
 ---
 layout: default
 ---
-# I commit at midnight
+# I commit at midnight.
 
 I often commit at midnight.
