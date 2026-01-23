@@ -32,7 +32,7 @@
   <a href="my-badges/favorite-word-add.md"><img src="my-badges/favorite-word-add.svg" alt='My favorite commit word is "add".' title='My favorite commit word is "add".' width="64" /></a>
 </p>
 <!-- my-badges end -->
----
+
 
 ## 📊 Stats
 
