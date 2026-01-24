@@ -71,4 +71,11 @@
 
 ## 🔗 Connect with Me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect%20with%20me-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/shabnamnazarli/)
+<p align="center">
+  <a href="https://www.linkedin.com/in/shabnamnazarli/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect%20with%20me-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
+  </a>
+  <a href="https://github.com/nazarli-shabnam">
+    <img src="https://visitor-badge.glitch.me/badge?page_id=nazarli-shabnam.nazarli-shabnam&left_color=blueviolet&right_color=blueviolet&left_text=Weekly%20Views" alt="Weekly Views" />
+  </a>
+</p>
