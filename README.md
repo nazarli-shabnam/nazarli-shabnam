@@ -73,4 +73,4 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect%20with%20me-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/shabnamnazarli/)
 
-![Profile Views](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/nazarli-shabnam/nazarli-shabnam/main/profile-views.json&label=PROFILE%20VIEWS&query=%24.count&color=007bff&labelColor=2d3748&style=flat-square)
+![Profile Views](https://komarev.com/ghpvc/?username=nazarli-shabnam&label=PROFILE%20VIEWS&color=007bff&labelColor=2d3748&style=flat-square)

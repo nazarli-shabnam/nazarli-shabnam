@@ -1,10 +1,11 @@
 name: Track Profile View
 
-# This workflow can be triggered by a webhook or external service
+# This can be triggered via URL to track views
 on:
+  workflow_call:
+  workflow_dispatch:
   repository_dispatch:
     types: [profile-view]
-  workflow_dispatch:
 
 jobs:
   increment-view:
@@ -18,7 +19,7 @@ jobs:
       - name: Increment view count
         run: |
           if [ -f "profile-views.json" ]; then
-            COUNT=$(cat profile-views.json | grep -o '"count":[0-9]*' | grep -o '[0-9]*' || echo "0")
+            COUNT=$(cat profile-views.json | jq -r '.count // 0')
           else
             COUNT=0
           fi
@@ -32,5 +33,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add profile-views.json
-          git commit -m "Increment profile views" || exit 0
+          git commit -m "Increment profile views: $NEW_COUNT" || exit 0
           git push || exit 0
