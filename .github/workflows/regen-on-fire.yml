@@ -1,15 +1,15 @@
-name: Regenerate On-Fire Badge
+name: Update Dynamic Badges
 
 on:
   schedule:
-    - cron: "0 0 * * 0" # weekly on Sunday UTC
+    - cron: "0 0 * * *" # daily at midnight UTC
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
 jobs:
-  regen-on-fire:
+  update-badges:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -27,13 +27,27 @@ jobs:
         run: |
           node scripts/generate-on-fire.mjs
 
+      - name: Generate stars badge
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+        run: |
+          node scripts/generate-stars.mjs
+
+      - name: Generate favorite word badge
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+        run: |
+          node scripts/generate-favorite-word.mjs
+
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add my-badges/on-fire-30.svg my-badges/on-fire-30.md || true
+          git add my-badges/on-fire-30.svg my-badges/on-fire-30.md my-badges/stars-4.svg my-badges/stars-4.md my-badges/favorite-word-add.svg my-badges/favorite-word-add.md || true
           if ! git diff --staged --quiet; then
-            git commit -m "chore: update on-fire badge" || true
+            git commit -m "chore: update dynamic badges" || true
             git push
           else
             echo "No changes to commit"
