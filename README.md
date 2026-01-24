@@ -1,6 +1,6 @@
 # Hey, I'm Shabnam 👋
 
-> <table width="100%"><tr><td>Backend Developer | AI Enthusiast</td><td align="right"><img src="https://komarev.com/ghpvc/?username=nazarli-shabnam&color=blueviolet&label=Total+Views&style=flat-square" alt="Total Views" /></td></tr></table>
+> Backend Developer | AI Enthusiast
 
 <!-- > _“Beyond the screen, a universe of code.”_ -->
 
@@ -14,7 +14,7 @@
 **Languages:** Python, TypeScript, JavaScript, C++  
 **Frameworks & Libraries:** FastAPI, NestJS, Django, Express.js, React  
 **Tools & Platforms:** Docker, AWS, GitLab CI/CD  
-**Focus Areas:** Backend Architecture, API Design, System Scalability
+<table width="100%"><tr><td><strong>Focus Areas:</strong> Backend Architecture, API Design, System Scalability</td><td align="right"><img src="https://komarev.com/ghpvc/?username=nazarli-shabnam&color=blueviolet&label=Total+Views&style=flat-square" alt="Total Views" /></td></tr></table>
 
 ---
 
