@@ -14,7 +14,7 @@
 **Languages:** Python, TypeScript, JavaScript, C++  
 **Frameworks & Libraries:** FastAPI, NestJS, Django, Express.js, React  
 **Tools & Platforms:** Docker, AWS, GitLab CI/CD  
-<table width="100%"><tr><td><strong>Focus Areas:</strong> Backend Architecture, API Design, System Scalability</td><td align="right"><img src="https://komarev.com/ghpvc/?username=nazarli-shabnam&color=blueviolet&label=Total+Views&style=flat-square" alt="Total Views" /></td></tr></table>
+**Focus Areas:** Backend Architecture, API Design, System Scalability
 
 ---
 
@@ -72,3 +72,5 @@
 ## 🔗 Connect with Me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect%20with%20me-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/shabnamnazarli/)
+
+![Profile Views](https://komarev.com/ghpvc/?username=nazarli-shabnam&color=blueviolet&label=Total+Views&style=flat-square)
