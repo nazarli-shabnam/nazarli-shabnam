@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
   <rect width="100%" height="100%" rx="8" fill="#111216"/>
-  <g transform="translate(6.399999999999999,6.399999999999999) scale(0.8)">
+  <g transform="translate(9.600000000000001,5.600000000000001) scale(0.7)">
     
   <g id="color">
     <polygon fill="#FCEA2B" stroke="none" points="35.9928,10.7363 27.7913,27.3699 9.4394,30.0436 22.7245,42.9838 19.5962,61.2637 36.0084,52.6276 52.427,61.2515 49.2851,42.9739 62.5606,30.0239 44.2067,27.3638"/>
@@ -14,5 +14,6 @@
   </g>
 
   </g>
+  <text x="32" y="52" font-family="system-ui, -apple-system, Arial" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">4</text>
   <title>I collected 4 stars.</title>
 </svg>
