@@ -1,49 +1,41 @@
-name: Update Profile Views
+name: Update Profile Views Badge
 
 on:
   schedule:
-    # Runs daily to update the badge
-    - cron: '0 0 * * *'
+    # Runs every 6 hours to ensure badge is up to date
+    - cron: '0 */6 * * *'
   workflow_dispatch:
+  push:
+    paths:
+      - 'profile-views.json'
 
 jobs:
-  update-views:
+  update-badge:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Get view count
-        id: views
+      - name: Update README with dynamic badge
         run: |
-          # Komarev automatically tracks profile views
-          # Since komarev doesn't have a public API, we'll maintain our own counter
-          # You can manually update this or integrate with a view tracking service
+          # Use Shields.io dynamic JSON badge that reads from profile-views.json
+          # This badge will automatically update when the JSON file changes
+          BADGE_URL="https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/nazarli-shabnam/nazarli-shabnam/main/profile-views.json&label=PROFILE%20VIEWS&query=%24.count&color=007bff&labelColor=2d3748&style=flat-square"
           
-          if [ -f "profile-views.txt" ]; then
-            COUNT=$(cat profile-views.txt)
-          else
-            COUNT=0
+          # Check if badge URL needs updating
+          CURRENT_BADGE=$(grep -o 'https://img.shields.io/badge/[^)]*' README.md | head -1 || echo "")
+          
+          if [[ "$CURRENT_BADGE" != *"dynamic/json"* ]]; then
+            # Update to use dynamic badge
+            sed -i "s|https://img.shields.io/badge/PROFILE%20VIEWS-[0-9,]*|$BADGE_URL|g" README.md
           fi
-          
-          # Format with commas using printf
-          FORMATTED=$(printf "%'d" $COUNT)
-          echo "count=$FORMATTED" >> $GITHUB_OUTPUT
 
-      - name: Update README badge
-        run: |
-          COUNT="${{ steps.views.outputs.count }}"
-          # Update the badge URL in README.md
-          sed -i "s|https://img.shields.io/badge/PROFILE%20VIEWS-[0-9,]*|https://img.shields.io/badge/PROFILE%20VIEWS-$COUNT|g" README.md
-
-      - name: Commit and push
+      - name: Commit and push if changed
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add README.md
           if ! git diff --staged --quiet; then
-            git commit -m "Update profile views badge"
+            git commit -m "Update profile views badge to use dynamic endpoint"
             git push
           fi

@@ -1,0 +1,36 @@
+name: Track Profile View
+
+# This workflow can be triggered by a webhook or external service
+on:
+  repository_dispatch:
+    types: [profile-view]
+  workflow_dispatch:
+
+jobs:
+  increment-view:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Increment view count
+        run: |
+          if [ -f "profile-views.json" ]; then
+            COUNT=$(cat profile-views.json | grep -o '"count":[0-9]*' | grep -o '[0-9]*' || echo "0")
+          else
+            COUNT=0
+          fi
+          
+          NEW_COUNT=$((COUNT + 1))
+          echo "{\"count\": $NEW_COUNT}" > profile-views.json
+          echo "Updated count to: $NEW_COUNT"
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add profile-views.json
+          git commit -m "Increment profile views" || exit 0
+          git push || exit 0
