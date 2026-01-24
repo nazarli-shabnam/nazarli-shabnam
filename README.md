@@ -1,6 +1,6 @@
 # Hey, I'm Shabnam 👋
 
-> Backend Developer | AI Enthusiast
+> <table width="100%"><tr><td>Backend Developer | AI Enthusiast</td><td align="right"><img src="https://komarev.com/ghpvc/?username=nazarli-shabnam&color=blueviolet&label=Total+Views&style=flat-square" alt="Total Views" /></td></tr></table>
 
 <!-- > _“Beyond the screen, a universe of code.”_ -->
 
@@ -71,11 +71,4 @@
 
 ## 🔗 Connect with Me
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/shabnamnazarli/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect%20with%20me-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
-  </a>
-  <a href="https://github.com/nazarli-shabnam">
-    <img src="https://komarev.com/ghpvc/?username=nazarli-shabnam&color=blueviolet&label=Weekly+Views&style=flat-square" alt="Weekly Views" />
-  </a>
-</p>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect%20with%20me-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/shabnamnazarli/)
