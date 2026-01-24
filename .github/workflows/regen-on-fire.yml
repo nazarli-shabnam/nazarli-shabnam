@@ -43,11 +43,15 @@ jobs:
         run: |
           node scripts/generate-favorite-word.mjs
 
+      - name: Update README title attributes
+        run: |
+          node scripts/update-readme-titles.mjs
+
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add my-badges/on-fire-30.svg my-badges/on-fire-30.md my-badges/stars-4.svg my-badges/stars-4.md my-badges/favorite-word-add.svg my-badges/favorite-word-add.md || true
+          git add my-badges/on-fire-30.svg my-badges/on-fire-30.md my-badges/stars-4.svg my-badges/stars-4.md my-badges/favorite-word-add.svg my-badges/favorite-word-add.md README.md || true
           if ! git diff --staged --quiet; then
             git commit -m "chore: update dynamic badges" || true
             git push
