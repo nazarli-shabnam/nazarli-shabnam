@@ -76,6 +76,6 @@
     <img src="https://img.shields.io/badge/LinkedIn-Connect%20with%20me-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
   </a>
   <a href="https://github.com/nazarli-shabnam">
-    <img src="https://visitor-badge.glitch.me/badge?page_id=nazarli-shabnam.nazarli-shabnam&left_color=blueviolet&right_color=blueviolet&left_text=Weekly%20Views" alt="Weekly Views" />
+    <img src="https://komarev.com/ghpvc/?username=nazarli-shabnam&color=blueviolet&label=Weekly+Views&style=flat-square" alt="Weekly Views" />
   </a>
 </p>
