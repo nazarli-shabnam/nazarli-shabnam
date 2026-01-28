@@ -23,16 +23,16 @@
   <!-- generated badges -->
   <a href="my-badges/a-commit.md"><img src="my-badges/a-commit.svg" alt="One of my commit sha starts with &quot;a&quot;." title="One of my commit sha starts with &quot;a&quot;." width="64" /></a>
   <a href="my-badges/1571-commit.md"><img src="my-badges/1571-commit.svg" alt="1571 — historical commit" title="1571 — historical commit" width="64" /></a>
-  <a href="my-badges/stars-4.md"><img src="my-badges/stars-4.svg" alt="I collected 4 stars." title="I collected 4 stars." width="64" /></a>
+  <a href="my-badges/stars-4.md"><img src="my-badges/stars-4.svg" alt="I collected 4 stars." title="I collected 9 stars." width="64" /></a>
   <a href="my-badges/tp-survivor.md"><img src="my-badges/tp-survivor.svg" alt="I rolled before Covid-19: Survivor of the Great TP Shortage" title="I rolled before Covid-19: Survivor of the Great TP Shortage" width="64" /></a>
   <a href="my-badges/bd-commit.md"><img src="my-badges/bd-commit.svg" alt="I committed on my birthday." title="I committed on my birthday." width="64" /></a>
   <a href="my-badges/public-keys-2.md"><img src="my-badges/public-keys-2.svg" alt="I have 2 public keys." title="I have 2 public keys." width="64" /></a>
   <a href="my-badges/morning-commit.md"><img src="my-badges/morning-commit.svg" alt="I commit in the morning." title="I commit in the morning." width="64" /></a>
   <a href="my-badges/midnight-commit.md"><img src="my-badges/midnight-commit.svg" alt="I commit at midnight." title="I commit at midnight." width="64" /></a>
   <a href="my-badges/new-year-commit.md"><img src="my-badges/new-year-commit.svg" alt="I committed on New Year's Day." title="I committed on New Year's Day." width="64" /></a>
-  <a href="my-badges/favorite-word-add.md"><img src="my-badges/favorite-word-add.svg" alt='My favorite commit word is "add".' title='My favorite commit word is "add".' width="64" /></a>
+  <a href="my-badges/favorite-word-add.md"><img src="my-badges/favorite-word-add.svg" alt='My favorite commit word is "add".' title='My favorite commit word is &quot;add&quot;.' width="64" /></a>
   <a href="my-badges/allegedly-personality.md"><img src="my-badges/allegedly-personality.svg" alt="allegedly, i have a great personality" title="allegedly, i have a great personality" width="64" /></a>
-  <a href="my-badges/on-fire-30.md"><img src="my-badges/on-fire-30.svg" alt="on fire (30d)" title="on fire (30d)" width="64" /></a>
+  <a href="my-badges/on-fire-30.md"><img src="my-badges/on-fire-30.svg" alt="on fire (30d)" title="on fire (30d): 5" width="64" /></a>
 </p>
 <!-- my-badges end -->
 
