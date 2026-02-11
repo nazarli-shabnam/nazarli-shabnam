@@ -41,12 +41,12 @@
 <table role="presentation" style="width:100%;max-width:760px;margin:0 auto;border-collapse:collapse;border-spacing:0;">
   <tr style="border:none;">
     <td align="center" style="width:60%;padding:4px;vertical-align:top;border:none;background:transparent;">
-      <img src="https://github-readme-stats.vercel.app/api?username=nazarli-shabnam&theme=tokyonight&show_icons=true&hide_border=true"
+      <img src="profile/stats.svg"
            alt="GitHub stats"
            style="width:400px;max-width:100%;height:auto;border:none;outline:none;box-shadow:none;border-radius:6px;" />
     </td>
     <td align="center" style="width:40%;padding:6px;vertical-align:top;border:none;background:transparent;">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nazarli-shabnam&layout=compact&theme=tokyonight&hide_border=true"
+      <img src="profile/top-langs.svg"
            alt="Top Languages"
            style="width:300px;max-width:100%;height:auto;border:none;outline:none;box-shadow:none;border-radius:6px;" />
     </td>
