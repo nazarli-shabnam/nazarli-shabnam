@@ -32,7 +32,7 @@
   <a href="my-badges/new-year-commit.md"><img src="my-badges/new-year-commit.svg" alt="I committed on New Year's Day." title="I committed on New Year's Day." width="64" /></a>
   <a href="my-badges/favorite-word-add.md"><img src="my-badges/favorite-word-add.svg" alt='My favorite commit word is "add".' title='My favorite commit word is &quot;add&quot;.' width="64" /></a>
   <a href="my-badges/allegedly-personality.md"><img src="my-badges/allegedly-personality.svg" alt="allegedly, i have a great personality" title="allegedly, i have a great personality" width="64" /></a>
-  <a href="my-badges/on-fire-30.md"><img src="my-badges/on-fire-30.svg" alt="on fire (30d)" title="on fire (30d): 9" width="64" /></a>
+  <a href="my-badges/on-fire-30.md"><img src="my-badges/on-fire-30.svg" alt="on fire (30d)" title="on fire (30d): 8" width="64" /></a>
 </p>
 <!-- my-badges end -->
 
