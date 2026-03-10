@@ -1,8 +1,8 @@
 # Hey, I'm Shabnam 👋
 
-> Backend Developer | AI Enthusiast
+> Software Engineer
 
-<!-- > _“Beyond the screen, a universe of code.”_ -->
+> _“Beyond the screen, a universe of code.”_
 
 <!-- ![GitHub Banner](https://imgur.com/a/WGsyfoA) -->
 <!-- <p><sub><i>Allegedly, I have a great personality.</i></sub></p> -->
