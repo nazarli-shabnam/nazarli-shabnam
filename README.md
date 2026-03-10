@@ -1,6 +1,6 @@
 # Hey, I'm Shabnam 👋
 
-> <span style="font-size: 1.12em">Software Engineer</span>
+> <span style="font-size: 1.4em">Software Engineer</span>
 
 > _“Beyond the screen, a universe of code.”_
 
