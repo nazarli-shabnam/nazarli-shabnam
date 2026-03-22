@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img">
   <defs>
-    <linearGradient id="issueFace" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1a3322"/>
-      <stop offset="100%" stop-color="#0e1f14"/>
-    </linearGradient>
     <radialGradient id="dotHi" cx="35%" cy="35%" r="65%">
       <stop offset="0%" stop-color="#56d364"/>
       <stop offset="100%" stop-color="#2ea043"/>
     </radialGradient>
   </defs>
   <rect width="100%" height="100%" rx="8" fill="#111216"/>
-  <rect width="100%" height="100%" rx="8" fill="url(#issueFace)" opacity="0.4"/>
-  <!-- soft outer ring -->
-  <circle cx="32" cy="29" r="17" fill="none" stroke="#3fb950" stroke-width="1" opacity="0.22"/>
-  <!-- GitHub-style open issue -->
-  <circle cx="32" cy="29" r="15" fill="#132a1a" stroke="#3fb950" stroke-width="2"/>
+  <!-- open issue: green ring + dot on same #111216 as other badges -->
+  <circle cx="32" cy="29" r="15" fill="#111216" stroke="#3fb950" stroke-width="2"/>
   <circle cx="32" cy="29" r="5.25" fill="url(#dotHi)"/>
   <text x="32" y="52.5" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#8b949e" letter-spacing="0.14em" text-anchor="middle">FIRST</text>
   <title>First GitHub issue — Devlaner/devlane#27</title>

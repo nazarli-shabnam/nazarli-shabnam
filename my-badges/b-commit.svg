@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect width="100%" height="100%" rx="8" fill="#111216"/>
+  <g transform="translate(6.399999999999999,6.399999999999999) scale(0.8)">
+    <g id="color">
+      <path fill="#d22f27" d="M59.0349,60h-46.07A.9679.9679,0,0,1,12,59.0349v-46.07A.9679.9679,0,0,1,12.9651,12h46.07A.9679.9679,0,0,1,60,12.9651v46.07A.9679.9679,0,0,1,59.0349,60Z"/>
+    </g>
+    <g id="color-foreground">
+      <path fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2" d="M59.0349,60h-46.07A.9679.9679,0,0,1,12,59.0349v-46.07A.9679.9679,0,0,1,12.9651,12h46.07A.9679.9679,0,0,1,60,12.9651v46.07A.9679.9679,0,0,1,59.0349,60Z"/>
+      <text x="36" y="40" font-family="system-ui, -apple-system, 'Segoe UI', Arial, sans-serif" font-size="28" fill="#fff" font-weight="700" text-anchor="middle" dominant-baseline="middle">B</text>
+    </g>
+  </g>
+  <title>One of my commit sha starts with &quot;b&quot;.</title>
+</svg>

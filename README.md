@@ -22,6 +22,7 @@
 <p align="center">
   <!-- generated badges -->
   <a href="my-badges/a-commit.md"><img src="my-badges/a-commit.svg" alt="One of my commit sha starts with &quot;a&quot;." title="One of my commit sha starts with &quot;a&quot;." width="64" /></a>
+  <a href="my-badges/b-commit.md"><img src="my-badges/b-commit.svg" alt="One of my commit sha starts with &quot;b&quot;." title="One of my commit sha starts with &quot;b&quot;." width="64" /></a>
   <a href="my-badges/1571-commit.md"><img src="my-badges/1571-commit.svg" alt="1571 — historical commit" title="1571 — historical commit" width="64" /></a>
   <a href="my-badges/stars-4.md"><img src="my-badges/stars-4.svg" alt="I collected 4 stars." title="I collected 42 stars." width="64" /></a>
   <a href="my-badges/tp-survivor.md"><img src="my-badges/tp-survivor.svg" alt="I rolled before Covid-19: Survivor of the Great TP Shortage" title="I rolled before Covid-19: Survivor of the Great TP Shortage" width="64" /></a>
