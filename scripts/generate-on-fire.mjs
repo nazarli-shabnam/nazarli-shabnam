@@ -3,6 +3,8 @@ import path from "node:path";
 
 const TOKEN = process.env.GITHUB_TOKEN;
 const USERNAME = process.env.GITHUB_USERNAME;
+const ON_FIRE_THRESHOLD = 5;
+const BADGE_SLUG = "on-fire-ytd";
 const OUT_DIR = path.join(process.cwd(), "my-badges");
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
@@ -28,14 +30,21 @@ async function ghGraphQL(query, variables) {
   return json.data;
 }
 
-function computeOnFire(days, windowDays = 30, threshold = 10) {
-  const today = new Date();
-  const cutoff = new Date(today);
-  cutoff.setUTCDate(today.getUTCDate() - windowDays + 1);
+/** Today as YYYY-MM-DD in UTC (same date labels GitHub uses on the graph). */
+function utcDateString(d) {
+  return d.toISOString().slice(0, 10);
+}
+
+/**
+ * Count days in [year-01-01, today UTC] with contributions >= threshold.
+ * Extra filtering keeps the count correct if the API returns a wider calendar.
+ */
+function countOnFireDays(days, year, threshold = ON_FIRE_THRESHOLD) {
+  const start = `${year}-01-01`;
+  const end = utcDateString(new Date());
   let count = 0;
   for (const d of days) {
-    const dt = new Date(d.date + "T00:00:00Z");
-    if (dt >= cutoff && d.count >= threshold) count += 1;
+    if (d.date >= start && d.date <= end && d.count >= threshold) count += 1;
   }
   return count;
 }
@@ -48,18 +57,26 @@ function escapeXml(s) {
     .replace(/"/g, "&quot;");
 }
 
-function svgBadge(onFireCount) {
+function svgBadge(onFireCount, year) {
   const W = 64,
     H = 64;
   const flame = "🔥";
-  return `<?xml version="1.0" encoding="utf-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">\n  <rect width="100%" height="100%" rx="8" fill="#111216"/>\n  <text x="16" y="40" font-family="system-ui, -apple-system, Arial" font-size="28" fill="#ff7b7b">${escapeXml(flame)}</text>\n  <text x="44" y="46" font-family="system-ui, -apple-system, Arial" font-size="22" fill="#fff" font-weight="700" text-anchor="middle">${onFireCount}</text>\n  <title>on fire (30d): ${onFireCount}</title>\n</svg>`;
+  const n = String(onFireCount);
+  const numFont = n.length > 2 ? 14 : n.length > 1 ? 18 : 22;
+  const title = `on fire (YTD ${year}): ${onFireCount}`;
+  return `<?xml version="1.0" encoding="utf-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">\n  <rect width="100%" height="100%" rx="8" fill="#111216"/>\n  <text x="16" y="40" font-family="system-ui, -apple-system, Arial" font-size="28" fill="#ff7b7b">${escapeXml(flame)}</text>\n  <text x="44" y="46" font-family="system-ui, -apple-system, Arial" font-size="${numFont}" fill="#fff" font-weight="700" text-anchor="middle">${escapeXml(n)}</text>\n  <title>${escapeXml(title)}</title>\n</svg>`;
 }
 
 (async function main() {
+  const now = new Date();
+  const year = now.getUTCFullYear();
+  const fromISO = `${year}-01-01T00:00:00Z`;
+  const toISO = now.toISOString();
+
   const query = `
-    query($login: String!) {
+    query($login: String!, $from: DateTime!, $to: DateTime!) {
       user(login: $login) {
-        contributionsCollection {
+        contributionsCollection(from: $from, to: $to) {
           contributionCalendar {
             weeks { contributionDays { date contributionCount } }
           }
@@ -68,15 +85,19 @@ function svgBadge(onFireCount) {
     }
   `;
 
-  const data = await ghGraphQL(query, { login: USERNAME });
+  const data = await ghGraphQL(query, {
+    login: USERNAME,
+    from: fromISO,
+    to: toISO,
+  });
   const days = data.user.contributionsCollection.contributionCalendar.weeks
     .flatMap((w) => w.contributionDays)
     .map((d) => ({ date: d.date, count: d.contributionCount }));
 
-  const onFireCount = computeOnFire(days, 30, 10);
-  const svg = svgBadge(onFireCount);
-  fs.writeFileSync(path.join(OUT_DIR, "on-fire-30.svg"), svg, "utf8");
-  const md = `---\nlayout: default\n---\n# on fire (30d)\n\nDays with ≥10 contributions in last 30 days: ${onFireCount}\n`;
-  fs.writeFileSync(path.join(OUT_DIR, "on-fire-30.md"), md, "utf8");
-  console.log("Wrote on-fire-30.svg with count", onFireCount);
+  const onFireCount = countOnFireDays(days, year);
+  const svg = svgBadge(onFireCount, year);
+  fs.writeFileSync(path.join(OUT_DIR, `${BADGE_SLUG}.svg`), svg, "utf8");
+  const md = `---\nlayout: default\n---\n# on fire (YTD ${year})\n\nDays from Jan 1 through today (UTC) with ≥${ON_FIRE_THRESHOLD} contributions: ${onFireCount}\n`;
+  fs.writeFileSync(path.join(OUT_DIR, `${BADGE_SLUG}.md`), md, "utf8");
+  console.log(`Wrote ${BADGE_SLUG}.svg with count`, onFireCount);
 })();

@@ -15,10 +15,10 @@ function getBadgeTitle(slug) {
 function updateReadmeTitles() {
   let readme = fs.readFileSync(README_PATH, "utf8");
   
-  const onFireTitle = getBadgeTitle("on-fire-30");
+  const onFireTitle = getBadgeTitle("on-fire-ytd");
   if (onFireTitle) {
     readme = readme.replace(
-      /(<img[^>]*on-fire-30\.svg[^>]*title=")[^"]*(")/,
+      /(<img[^>]*on-fire-ytd\.svg[^>]*title=")[^"]*(")/,
       `$1${onFireTitle.replace(/"/g, "&quot;")}$2`
     );
   }
