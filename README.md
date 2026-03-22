@@ -34,7 +34,7 @@
   <a href="my-badges/favorite-word-add.md"><img src="my-badges/favorite-word-add.svg" alt='My favorite commit word is "add".' title='My favorite commit word is &quot;add&quot;.' width="64" /></a>
   <a href="my-badges/allegedly-personality.md"><img src="my-badges/allegedly-personality.svg" alt="allegedly, i have a great personality" title="allegedly, i have a great personality" width="64" /></a>
   <a href="my-badges/first-issue.md"><img src="my-badges/first-issue.svg" alt="I opened my first GitHub issue." title="First GitHub issue — Devlaner/devlane#27" width="64" /></a>
-  <a href="my-badges/on-fire-ytd.md"><img src="my-badges/on-fire-ytd.svg" alt="on fire (YTD)" title="on fire (YTD 2026): 0" width="64" /></a>
+  <a href="my-badges/on-fire-ytd.md"><img src="my-badges/on-fire-ytd.svg" alt="on fire (YTD)" title="on fire (YTD 2026): 36" width="64" /></a>
 </p>
 <!-- my-badges end -->
 
