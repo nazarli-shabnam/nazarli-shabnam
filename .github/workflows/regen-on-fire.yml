@@ -26,6 +26,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
+          # Optional: fine-grained or classic PAT with read:user (and SSO authorize if needed).
+          # Matches the contribution graph you see when logged in; omit to use public-only data via GITHUB_TOKEN.
+          CONTRIBUTIONS_PAT: ${{ secrets.CONTRIBUTIONS_PAT }}
         run: |
           node scripts/generate-on-fire.mjs
 

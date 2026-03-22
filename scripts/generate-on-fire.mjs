@@ -1,15 +1,20 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const TOKEN = process.env.GITHUB_TOKEN;
+const CONTRIBUTIONS_PAT = process.env.CONTRIBUTIONS_PAT;
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const USERNAME = process.env.GITHUB_USERNAME;
+
+const TOKEN = CONTRIBUTIONS_PAT || GITHUB_TOKEN;
+const useViewer = Boolean(CONTRIBUTIONS_PAT);
+
 const ON_FIRE_THRESHOLD = 5;
 const BADGE_SLUG = "on-fire-ytd";
 const OUT_DIR = path.join(process.cwd(), "my-badges");
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
-if (!TOKEN) throw new Error("Missing GITHUB_TOKEN");
-if (!USERNAME) throw new Error("Missing GITHUB_USERNAME");
+if (!TOKEN) throw new Error("Missing GITHUB_TOKEN (or optional CONTRIBUTIONS_PAT)");
+if (!useViewer && !USERNAME) throw new Error("Missing GITHUB_USERNAME");
 
 async function ghGraphQL(query, variables) {
   const res = await fetch("https://api.github.com/graphql", {
@@ -37,7 +42,8 @@ function utcDateString(d) {
 
 /**
  * Count days in [year-01-01, today UTC] with contributions >= threshold.
- * Extra filtering keeps the count correct if the API returns a wider calendar.
+ * Calendar must cover that range (use default contributionsCollection, not a
+ * narrow from/to, so GitHub returns a full ~1y grid).
  */
 function countOnFireDays(days, year, threshold = ON_FIRE_THRESHOLD) {
   const start = `${year}-01-01`;
@@ -70,27 +76,43 @@ function svgBadge(onFireCount, year) {
 (async function main() {
   const now = new Date();
   const year = now.getUTCFullYear();
-  const fromISO = `${year}-01-01T00:00:00Z`;
-  const toISO = now.toISOString();
 
-  const query = `
-    query($login: String!, $from: DateTime!, $to: DateTime!) {
-      user(login: $login) {
-        contributionsCollection(from: $from, to: $to) {
-          contributionCalendar {
-            weeks { contributionDays { date contributionCount } }
+  let collection;
+  if (useViewer) {
+    const query = `
+      query {
+        viewer {
+          contributionsCollection {
+            contributionCalendar {
+              weeks { contributionDays { date contributionCount } }
+            }
           }
         }
       }
-    }
-  `;
+    `;
+    const data = await ghGraphQL(query, {});
+    collection = data.viewer?.contributionsCollection;
+  } else {
+    const query = `
+      query($login: String!) {
+        user(login: $login) {
+          contributionsCollection {
+            contributionCalendar {
+              weeks { contributionDays { date contributionCount } }
+            }
+          }
+        }
+      }
+    `;
+    const data = await ghGraphQL(query, { login: USERNAME });
+    collection = data.user?.contributionsCollection;
+  }
 
-  const data = await ghGraphQL(query, {
-    login: USERNAME,
-    from: fromISO,
-    to: toISO,
-  });
-  const days = data.user.contributionsCollection.contributionCalendar.weeks
+  if (!collection?.contributionCalendar?.weeks) {
+    throw new Error("No contribution calendar returned");
+  }
+
+  const days = collection.contributionCalendar.weeks
     .flatMap((w) => w.contributionDays)
     .map((d) => ({ date: d.date, count: d.contributionCount }));
 
@@ -99,5 +121,5 @@ function svgBadge(onFireCount, year) {
   fs.writeFileSync(path.join(OUT_DIR, `${BADGE_SLUG}.svg`), svg, "utf8");
   const md = `---\nlayout: default\n---\n# on fire (YTD ${year})\n\nDays from Jan 1 through today (UTC) with ≥${ON_FIRE_THRESHOLD} contributions: ${onFireCount}\n`;
   fs.writeFileSync(path.join(OUT_DIR, `${BADGE_SLUG}.md`), md, "utf8");
-  console.log(`Wrote ${BADGE_SLUG}.svg with count`, onFireCount);
+  console.log(`Wrote ${BADGE_SLUG}.svg with count`, onFireCount, useViewer ? "(viewer + PAT)" : "(public API)");
 })();
