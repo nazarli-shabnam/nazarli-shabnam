@@ -1,39 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
-  <defs>
-    <!-- Panel stroke matches the same blue-gray vibe as GitHub UI accents -->
-    <linearGradient id="oo00-stroke" x1="10" y1="14" x2="54" y2="56" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#60a5fa"/>
-      <stop offset="0.55" stop-color="#3b82f6"/>
-      <stop offset="1" stop-color="#93c5fd"/>
-    </linearGradient>
-    <linearGradient id="oo00-panel" x1="20" y1="18" x2="44" y2="46" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0b1220"/>
-      <stop offset="1" stop-color="#0f172a"/>
-    </linearGradient>
-    <linearGradient id="oo00-text" x1="18" y1="30" x2="46" y2="30" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#f8fafc"/>
-      <stop offset="0.55" stop-color="#c7d2fe"/>
-      <stop offset="1" stop-color="#93c5fd"/>
-    </linearGradient>
-  </defs>
-
   <rect width="64" height="64" rx="8" fill="#111216"/>
-
-  <!-- inner “code chip” -->
-  <rect x="9" y="17" width="46" height="30" rx="9" fill="url(#oo00-panel)" stroke="url(#oo00-stroke)" stroke-width="2.5"/>
-
-  <!-- digits -->
+  <rect x="12" y="12" width="40" height="40" rx="3" fill="#7f1d3f" stroke="#ffffff" stroke-width="2"/>
+  <rect x="18" y="23" width="28" height="18" rx="9" fill="#5f1730" stroke="#f2d7e6" stroke-width="1"/>
   <text
     x="32"
-    y="37.5"
+    y="34"
     font-family="Consolas, 'SF Mono', 'Liberation Mono', Menlo, Courier, monospace"
-    font-size="20"
+    font-size="15"
     font-weight="800"
-    fill="url(#oo00-text)"
+    fill="#fdeff7"
     text-anchor="middle"
     dominant-baseline="middle"
   >00</text>
-
   <title>Commit SHA starts with 00</title>
 </svg>
