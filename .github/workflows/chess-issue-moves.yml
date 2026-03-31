@@ -23,6 +23,10 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Install deps
+        run: |
+          npm ci
+
       - name: Apply chess move (if any)
         env:
           ISSUE_TITLE: ${{ github.event.issue.title }}

@@ -52,6 +52,7 @@ async function main() {
         promo: move.promo ?? null,
         issueNumber: issueNumber ? Number(issueNumber) : null,
         at: nowIso(),
+        san: applied.meta?.san ?? null,
       },
     ],
   };
@@ -62,7 +63,7 @@ async function main() {
   await writeResult({
     ok: true,
     shouldAct: true,
-    message: `Move accepted: ${move.from}->${move.to}${move.promo ? `=${move.promo}` : ""}`,
+    message: `Move accepted: ${applied.meta?.san ? `${applied.meta.san} (${move.from}->${move.to})` : `${move.from}->${move.to}`}`,
     issueNumber,
     move,
     fen: nextState.fen,

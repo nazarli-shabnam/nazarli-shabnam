@@ -22,6 +22,10 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Install deps
+        run: |
+          npm ci
+
       - name: Generate on-fire badge
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -63,7 +63,7 @@
 It’s an **open chess game** — anyone can play by opening an issue.
 
 - **Make a move**: open an issue titled `chess: e2e4` (also supports `chess: move e2 to e4`)
-- **Rules**: simple move validation (source has the side-to-move piece; can’t capture your own piece)
+- **Rules**: strict chess legality (check, castling, en passant, promotion, etc.)
 
 <p align="center">
   <img src="chess/chessboard.svg" alt="Open chess board" width="520" />
