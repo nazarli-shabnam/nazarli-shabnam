@@ -58,8 +58,16 @@
 
 ---
 
-<!-- ## 🎮 Play Chess with Me
-![chess board](https://github.com/nazarli-shabnam/nazarli-shabnam/blob/master/chessboard.svg) -->
+## 🎮 Play Chess with Me
+
+It’s an **open chess game** — anyone can play by opening an issue.
+
+- **Make a move**: open an issue titled `chess: e2e4` (also supports `chess: move e2 to e4`)
+- **Rules**: simple move validation (source has the side-to-move piece; can’t capture your own piece)
+
+<p align="center">
+  <img src="chess/chessboard.svg" alt="Open chess board" width="520" />
+</p>
 
 <!-- ## 🎧 Now Playing
 ![Spotify Playing](https://spotify-github-profile.vercel.app/api/view?uid=314dwcjemtfzwdygc76qr4ya5yhq&cover_image=true&theme=novatorem) -->

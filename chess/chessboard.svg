@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="568" height="602" viewBox="0 0 568 602">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="pieceShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="568" height="602" fill="url(#bg)"/>
+  <rect x="18" y="18" width="532" height="532" rx="16" fill="#111827" filter="url(#shadow)"/>
+
+  <rect x="28" y="28" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="92" y="28" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="156" y="28" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="220" y="28" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="284" y="28" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="348" y="28" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="412" y="28" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="476" y="28" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="28" y="92" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="92" y="92" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="156" y="92" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="220" y="92" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="284" y="92" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="348" y="92" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="412" y="92" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="476" y="92" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="28" y="156" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="92" y="156" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="156" y="156" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="220" y="156" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="284" y="156" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="348" y="156" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="412" y="156" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="476" y="156" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="28" y="220" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="92" y="220" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="156" y="220" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="220" y="220" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="284" y="220" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="348" y="220" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="412" y="220" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="476" y="220" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="28" y="284" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="92" y="284" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="156" y="284" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="220" y="284" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="284" y="284" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="348" y="284" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="412" y="284" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="476" y="284" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="28" y="348" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="92" y="348" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="156" y="348" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="220" y="348" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="284" y="348" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="348" y="348" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="412" y="348" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="476" y="348" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="28" y="412" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="92" y="412" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="156" y="412" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="220" y="412" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="284" y="412" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="348" y="412" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="412" y="412" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="476" y="412" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="28" y="476" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="92" y="476" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="156" y="476" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="220" y="476" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="284" y="476" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="348" y="476" width="64" height="64" rx="6" fill="#3B4252"/>
+  <rect x="412" y="476" width="64" height="64" rx="6" fill="#EAECEF"/>
+  <rect x="476" y="476" width="64" height="64" rx="6" fill="#3B4252"/>
+  
+  <g filter="url(#pieceShadow)">
+  <text x="60" y="530" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♖</text>
+  <text x="124" y="530" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♘</text>
+  <text x="188" y="530" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♗</text>
+  <text x="252" y="530" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♕</text>
+  <text x="316" y="530" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♔</text>
+  <text x="380" y="530" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♗</text>
+  <text x="444" y="530" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♘</text>
+  <text x="508" y="530" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♖</text>
+  <text x="60" y="466" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♙</text>
+  <text x="124" y="466" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♙</text>
+  <text x="188" y="466" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♙</text>
+  <text x="252" y="466" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♙</text>
+  <text x="316" y="466" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♙</text>
+  <text x="380" y="466" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♙</text>
+  <text x="444" y="466" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♙</text>
+  <text x="508" y="466" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♙</text>
+  <text x="60" y="146" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♟</text>
+  <text x="124" y="146" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♟</text>
+  <text x="188" y="146" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♟</text>
+  <text x="252" y="146" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♟</text>
+  <text x="316" y="146" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♟</text>
+  <text x="380" y="146" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♟</text>
+  <text x="444" y="146" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♟</text>
+  <text x="508" y="146" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♟</text>
+  <text x="60" y="82" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♜</text>
+  <text x="124" y="82" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♞</text>
+  <text x="188" y="82" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♝</text>
+  <text x="252" y="82" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♛</text>
+  <text x="316" y="82" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♚</text>
+  <text x="380" y="82" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♝</text>
+  <text x="444" y="82" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♞</text>
+  <text x="508" y="82" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♜</text>
+  </g>
+  <text x="60" y="562" text-anchor="middle" font-size="14" fill="#9CA3AF" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">a</text>
+  <text x="16" y="513" text-anchor="middle" font-size="14" fill="#9CA3AF" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">1</text>
+  <text x="124" y="562" text-anchor="middle" font-size="14" fill="#9CA3AF" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">b</text>
+  <text x="16" y="449" text-anchor="middle" font-size="14" fill="#9CA3AF" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">2</text>
+  <text x="188" y="562" text-anchor="middle" font-size="14" fill="#9CA3AF" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">c</text>
+  <text x="16" y="385" text-anchor="middle" font-size="14" fill="#9CA3AF" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">3</text>
+  <text x="252" y="562" text-anchor="middle" font-size="14" fill="#9CA3AF" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">d</text>
+  <text x="16" y="321" text-anchor="middle" font-size="14" fill="#9CA3AF" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">4</text>
+  <text x="316" y="562" text-anchor="middle" font-size="14" fill="#9CA3AF" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">e</text>
+  <text x="16" y="257" text-anchor="middle" font-size="14" fill="#9CA3AF" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">5</text>
+  <text x="380" y="562" text-anchor="middle" font-size="14" fill="#9CA3AF" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">f</text>
+  <text x="16" y="193" text-anchor="middle" font-size="14" fill="#9CA3AF" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">6</text>
+  <text x="444" y="562" text-anchor="middle" font-size="14" fill="#9CA3AF" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">g</text>
+  <text x="16" y="129" text-anchor="middle" font-size="14" fill="#9CA3AF" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">7</text>
+  <text x="508" y="562" text-anchor="middle" font-size="14" fill="#9CA3AF" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">h</text>
+  <text x="16" y="65" text-anchor="middle" font-size="14" fill="#9CA3AF" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">8</text>
+
+  <text x="284" y="592" text-anchor="middle" font-size="14" fill="#D1D5DB" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">Turn: White</text>
+</svg>

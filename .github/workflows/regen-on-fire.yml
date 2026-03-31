@@ -50,6 +50,10 @@ jobs:
         run: |
           node scripts/update-readme-titles.mjs
 
+      - name: Render chessboard (if enabled)
+        run: |
+          node -e "import('./scripts/chess/lib.mjs').then(async m=>{ const fs = await import('node:fs/promises'); const s = JSON.parse(await fs.readFile(m.STATE_PATH,'utf8')); process.env.CHESS_FEN = s.fen; process.env.CHESS_LAST_MOVE = JSON.stringify(s.lastMove || null); await import('./scripts/chess/render-board.mjs'); })"
+
       - name: Generate GitHub stats card
         uses: readme-tools/github-readme-stats-action@v1
         with:
@@ -70,7 +74,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add my-badges/on-fire-ytd.svg my-badges/on-fire-ytd.md my-badges/stars-4.svg my-badges/stars-4.md my-badges/favorite-word-add.svg my-badges/favorite-word-add.md profile/stats.svg profile/top-langs.svg README.md || true
+          git add my-badges/on-fire-ytd.svg my-badges/on-fire-ytd.md my-badges/stars-4.svg my-badges/stars-4.md my-badges/favorite-word-add.svg my-badges/favorite-word-add.md profile/stats.svg profile/top-langs.svg chess/chessboard.svg chess/state.json README.md || true
           if ! git diff --staged --quiet; then
             git commit -m "chore: update dynamic badges" || true
             git push

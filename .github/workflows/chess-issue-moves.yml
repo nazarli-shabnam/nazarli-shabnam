@@ -1,0 +1,78 @@
+name: Open Chess — Apply Moves from Issues
+
+on:
+  issues:
+    types: [opened, edited, reopened]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  apply-move:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Apply chess move (if any)
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          RESULT_PATH: chess-result.json
+        run: |
+          node scripts/chess/handle-issue.mjs
+
+      - name: Commit board updates (if changed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add chess/state.json chess/chessboard.svg || true
+          if ! git diff --staged --quiet; then
+            git commit -m "chore(chess): apply open chess move" || true
+            git push
+          else
+            echo "No chess changes to commit"
+          fi
+
+      - name: Comment & close issue (when command present)
+        if: ${{ github.event_name == 'issues' }}
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const result = JSON.parse(fs.readFileSync('chess-result.json', 'utf8'));
+            const issue_number = context.payload.issue.number;
+
+            if (!result.shouldAct) {
+              // Not a chess command; do nothing.
+              return;
+            }
+
+            const body = result.ok
+              ? `${result.message}\n\nBoard updated in \`chess/chessboard.svg\`.`
+              : `${result.message}\n\nTry an issue title like \`chess: e2e4\`.`;
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number,
+              body
+            });
+
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number,
+              state: 'closed'
+            });
+
