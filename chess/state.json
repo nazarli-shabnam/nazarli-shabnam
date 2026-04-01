@@ -1,5 +1,5 @@
 {
-  "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w - - 0 2",
+  "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b - - 1 2",
   "history": [
     {
       "from": "e2",
@@ -16,12 +16,20 @@
       "issueNumber": 2,
       "at": "2026-03-31T20:54:25.044Z",
       "san": "e5"
+    },
+    {
+      "from": "g1",
+      "to": "f3",
+      "promo": null,
+      "issueNumber": 3,
+      "at": "2026-04-01T05:19:10.652Z",
+      "san": "Nf3"
     }
   ],
   "lastMove": {
-    "from": "e7",
-    "to": "e5",
+    "from": "g1",
+    "to": "f3",
     "promo": null
   },
-  "updatedAt": "2026-03-31T20:54:25.044Z"
+  "updatedAt": "2026-04-01T05:19:10.652Z"
 }
