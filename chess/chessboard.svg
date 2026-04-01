@@ -80,8 +80,8 @@
   <rect x="348" y="476" width="64" height="64" rx="6" fill="#3B4252"/>
   <rect x="412" y="476" width="64" height="64" rx="6" fill="#EAECEF"/>
   <rect x="476" y="476" width="64" height="64" rx="6" fill="#3B4252"/>
-  <rect x="415" y="479" width="58" height="58" rx="8" fill="none" stroke="#F59E0B" stroke-width="4" opacity="0.85"/>
-  <rect x="351" y="351" width="58" height="58" rx="8" fill="none" stroke="#F59E0B" stroke-width="4" opacity="0.85"/>
+  <rect x="95" y="31" width="58" height="58" rx="8" fill="none" stroke="#F59E0B" stroke-width="4" opacity="0.85"/>
+  <rect x="159" y="159" width="58" height="58" rx="8" fill="none" stroke="#F59E0B" stroke-width="4" opacity="0.85"/>
   <g filter="url(#pieceShadow)">
   <text x="60" y="530" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♖</text>
   <text x="124" y="530" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♘</text>
@@ -100,6 +100,7 @@
   <text x="380" y="402" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♘</text>
   <text x="316" y="338" text-anchor="middle" font-size="52" fill="#F9FAFB" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♙</text>
   <text x="316" y="274" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♟</text>
+  <text x="188" y="210" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♞</text>
   <text x="60" y="146" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♟</text>
   <text x="124" y="146" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♟</text>
   <text x="188" y="146" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♟</text>
@@ -108,7 +109,6 @@
   <text x="444" y="146" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♟</text>
   <text x="508" y="146" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♟</text>
   <text x="60" y="82" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♜</text>
-  <text x="124" y="82" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♞</text>
   <text x="188" y="82" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♝</text>
   <text x="252" y="82" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♛</text>
   <text x="316" y="82" text-anchor="middle" font-size="52" fill="#111827" font-family="Segoe UI Symbol, Apple Color Emoji, Noto Sans Symbols2, Noto Sans Symbols, ui-sans-serif, system-ui">♚</text>
@@ -133,5 +133,5 @@
   <text x="508" y="562" text-anchor="middle" font-size="14" fill="#9CA3AF" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">h</text>
   <text x="16" y="65" text-anchor="middle" font-size="14" fill="#9CA3AF" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">8</text>
 
-  <text x="284" y="592" text-anchor="middle" font-size="14" fill="#D1D5DB" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">Turn: Black • Last: g1-&gt;f3</text>
+  <text x="284" y="592" text-anchor="middle" font-size="14" fill="#D1D5DB" font-family="ui-sans-serif, system-ui, Segoe UI, Arial">Turn: White • Last: b8-&gt;c6</text>
 </svg>
