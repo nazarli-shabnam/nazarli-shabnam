@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Shabnam's GitHub Stats, Rank: B+</title>
-        <desc id="descId">Total Stars Earned: 51, Total Commits  (last year) : 794, Total PRs: 60, Total Issues: 16, Contributed to (last year): 6</desc>
+        <desc id="descId">Total Stars Earned: 51, Total Commits  (last year) : 793, Total PRs: 55, Total Issues: 16, Contributed to (last year): 6</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 98.57461231827455;
+        stroke-dashoffset: 100.5504235141824;
       }
     }
   
@@ -177,7 +177,7 @@
         x="219.01"
         y="12.5"
         data-testid="commits"
-      >794</text>
+      >793</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -192,7 +192,7 @@
         x="219.01"
         y="12.5"
         data-testid="prs"
-      >60</text>
+      >55</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
