@@ -11,7 +11,7 @@
 
 ## 🧩 Tech Stack
 
-**Languages:** Python, TypeScript, JavaScript, C++  
+**Languages:** Python, TypeScript, JavaScript, Golang  
 **Frameworks & Libraries:** FastAPI, NestJS, Django, Express.js, React  
 **Tools & Platforms:** Docker, AWS, GitLab CI/CD  
 **Focus Areas:** Backend Architecture, API Design, System Scalability
