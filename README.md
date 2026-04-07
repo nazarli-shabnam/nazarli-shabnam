@@ -11,7 +11,7 @@
 
 ## 🧩 Tech Stack
 
-**Languages:** Python, TypeScript, JavaScript, C++  
+**Languages:** Python, TypeScript, JavaScript, Golang  
 **Frameworks & Libraries:** FastAPI, NestJS, Django, Express.js, React  
 **Tools & Platforms:** Docker, AWS, GitLab CI/CD  
 **Focus Areas:** Backend Architecture, API Design, System Scalability
@@ -52,6 +52,13 @@
       <img src="profile/top-langs.svg"
            alt="Top Languages"
            style="width:300px;max-width:100%;height:auto;border:none;outline:none;box-shadow:none;border-radius:6px;" />
+    </td>
+  </tr>
+  <tr style="border:none;">
+    <td colspan="2" align="center" style="padding:12px 4px 4px;border:none;background:transparent;">
+      <img src="https://streak-stats.demolab.com?user=nazarli-shabnam&amp;theme=tokyonight&amp;hide_border=true"
+           alt="GitHub contribution streak"
+           style="width:100%;max-width:720px;height:auto;border:none;outline:none;box-shadow:none;border-radius:6px;" />
     </td>
   </tr>
 </table>
