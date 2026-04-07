@@ -9,12 +9,18 @@
 
 ---
 
-## 🧩 Tech Stack
+## 🧩 What I’m working on
 
-**Languages:** Python, TypeScript, JavaScript, Golang  
-**Frameworks & Libraries:** FastAPI, NestJS, Django, Express.js, React  
-**Tools & Platforms:** Docker, AWS, GitLab CI/CD  
-**Focus Areas:** Backend Architecture, API Design, System Scalability
+Public activity in the last **5 days**
+
+**Repos I’ve been active in:**
+
+- [Devlaner/devlane](https://github.com/Devlaner/devlane)
+- [nazarli-shabnam/git-explain](https://github.com/nazarli-shabnam/git-explain)
+- [Alievs-corp/ghscope](https://github.com/Alievs-corp/ghscope)
+- [Devlaner/clevis](https://github.com/Devlaner/clevis)
+
+
 
 ---
 

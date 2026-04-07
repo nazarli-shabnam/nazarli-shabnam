@@ -54,6 +54,13 @@ jobs:
         run: |
           node scripts/update-readme-titles.mjs
 
+      - name: Update “recent repos” section (public activity, last 5 days)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+        run: |
+          node scripts/update-recent-repos.mjs
+
       - name: Render chessboard (if enabled)
         run: |
           node -e "import('./scripts/chess/lib.mjs').then(async m=>{ const fs = await import('node:fs/promises'); const s = JSON.parse(await fs.readFile(m.STATE_PATH,'utf8')); process.env.CHESS_FEN = s.fen; process.env.CHESS_LAST_MOVE = JSON.stringify(s.lastMove || null); await import('./scripts/chess/render-board.mjs'); })"
