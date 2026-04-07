@@ -1,43 +1,30 @@
 # Hey, I'm Shabnam 👋
 
-<h3>Software Engineer</h3>
+### Software Engineer
 
-> _“Beyond the screen, a universe of code.”_
+> *“Beyond the screen, a universe of code.”*
 
-<!-- ![GitHub Banner](https://imgur.com/a/WGsyfoA) -->
-<!-- <p><sub><i>Allegedly, I have a great personality.</i></sub></p> -->
+
+
+
 
 ---
 
 ## 🧩 Tech Stack
 
-**Languages:** Python, TypeScript, JavaScript, Golang  
-**Frameworks & Libraries:** FastAPI, NestJS, Django, Express.js, React  
-**Tools & Platforms:** Docker, AWS, GitLab CI/CD  
-**Focus Areas:** Backend Architecture, API Design, System Scalability
+**Languages:** Js/Ts, Python, Golang, SQL, PHP
+**Frameworks & ORMs:** FastAPI, Django, NestJS, React · SQLAlchemy, Alembic, Prisma  
+**Data:** PostgreSQL, MongoDB, MySQL, DynamoDB, AuroraDB  
+**APIs & auth:** REST, OAuth/JWT, webhooks, third-party integrations  
+**Backend & architecture:** Async I/O, background jobs, event-driven patterns, idempotency, concurrency control, SaaS / microservices  
+**Infrastructure:** Docker, CI/CD (incl. GitLab), AWS ECS (Fargate), monitoring & observability  
+**Focus:** Schema migrations, performance tuning, transaction-safe workflows
 
 ---
 
-<!-- my-badges start -->
-<p align="center">
-  <!-- generated badges -->
-  <a href="my-badges/a-commit.md"><img src="my-badges/a-commit.svg" alt="One of my commit sha starts with &quot;a&quot;." title="One of my commit sha starts with &quot;a&quot;." width="64" /></a>
-  <a href="my-badges/b-commit.md"><img src="my-badges/b-commit.svg" alt="One of my commit sha starts with &quot;b&quot;." title="One of my commit sha starts with &quot;b&quot;." width="64" /></a>
-  <a href="my-badges/00-commit.md"><img src="my-badges/00-commit.svg" alt="Commit SHA starts with 00" title="Commit SHA starts with 00" width="64" /></a>
-  <a href="my-badges/1571-commit.md"><img src="my-badges/1571-commit.svg" alt="1571 — historical commit" title="1571 — historical commit" width="64" /></a>
-  <a href="my-badges/stars-4.md"><img src="my-badges/stars-4.svg" alt="I collected 4 stars." title="I collected 62 stars." width="64" /></a>
-  <a href="my-badges/tp-survivor.md"><img src="my-badges/tp-survivor.svg" alt="I rolled before Covid-19: Survivor of the Great TP Shortage" title="I rolled before Covid-19: Survivor of the Great TP Shortage" width="64" /></a>
-  <a href="my-badges/bd-commit.md"><img src="my-badges/bd-commit.svg" alt="I committed on my birthday." title="I committed on my birthday." width="64" /></a>
-  <a href="my-badges/public-keys-2.md"><img src="my-badges/public-keys-2.svg" alt="I have 2 public keys." title="I have 2 public keys." width="64" /></a>
-  <a href="my-badges/morning-commit.md"><img src="my-badges/morning-commit.svg" alt="I commit in the morning." title="I commit in the morning." width="64" /></a>
-  <a href="my-badges/midnight-commit.md"><img src="my-badges/midnight-commit.svg" alt="I commit at midnight." title="I commit at midnight." width="64" /></a>
-  <a href="my-badges/new-year-commit.md"><img src="my-badges/new-year-commit.svg" alt="I committed on New Year's Day." title="I committed on New Year's Day." width="64" /></a>
-  <a href="my-badges/favorite-word-add.md"><img src="my-badges/favorite-word-add.svg" alt='My favorite commit word is "add".' title='My favorite commit word is &quot;add&quot;.' width="64" /></a>
-  <a href="my-badges/allegedly-personality.md"><img src="my-badges/allegedly-personality.svg" alt="allegedly, i have a great personality" title="allegedly, i have a great personality" width="64" /></a>
-  <a href="my-badges/first-issue.md"><img src="my-badges/first-issue.svg" alt="I opened my first GitHub issue." title="First GitHub issue — Devlaner/devlane#27" width="64" /></a>
-  <a href="my-badges/on-fire-ytd.md"><img src="my-badges/on-fire-ytd.svg" alt="on fire (YTD)" title="on fire (YTD 2026): 50" width="64" /></a>
-</p>
-<!-- my-badges end -->
+
+
+
 
 ## 📊 Stats
 
@@ -55,10 +42,10 @@
     </td>
   </tr>
   <tr style="border:none;">
-    <td colspan="2" align="center" style="padding:12px 4px 4px;border:none;background:transparent;">
-      <img src="https://streak-stats.demolab.com?user=nazarli-shabnam&amp;theme=tokyonight&amp;hide_border=true"
+    <td colspan="2" align="center" style="padding:10px 4px 2px;border:none;background:transparent;">
+      <img src="https://streak-stats.demolab.com/?user=nazarli-shabnam&amp;theme=tokyonight&amp;hide_border=true&amp;card_width=480"
            alt="GitHub contribution streak"
-           style="width:100%;max-width:720px;height:auto;border:none;outline:none;box-shadow:none;border-radius:6px;" />
+           style="width:100%;max-width:480px;height:auto;border:none;outline:none;box-shadow:none;border-radius:6px;display:block;margin:0 auto;" />
     </td>
   </tr>
 </table>
@@ -72,23 +59,20 @@ It’s an **open chess game** — anyone can play by opening an issue.
 - **Make a move**: open an issue titled `chess: e2e4` (also supports `chess: move e2 to e4`)
 - **Rules**: strict chess legality (check, castling, en passant, promotion, etc.)
 
-<p align="center">
-  <img src="chess/chessboard.svg" alt="Open chess board" width="520" />
-</p>
 
-<!-- ## 🎧 Now Playing
-![Spotify Playing](https://spotify-github-profile.vercel.app/api/view?uid=314dwcjemtfzwdygc76qr4ya5yhq&cover_image=true&theme=novatorem) -->
+
+
 
 ---
 
 ## ✨ Random Dev Quote
 
-![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&font=small)
+Quote
 
 ---
 
 ## 🔗 Connect with Me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect%20with%20me-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/shabnamnazarli/)
+[LinkedIn](https://www.linkedin.com/in/shabnamnazarli/)
 
-![Profile Views](https://komarev.com/ghpvc/?username=nazarli-shabnam&label=PROFILE%20VIEWS&color=007bff&labelColor=2d3748&style=flat-square)
+Profile Views
