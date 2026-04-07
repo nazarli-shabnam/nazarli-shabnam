@@ -62,9 +62,9 @@ Public activity in the last **5 days**
   </tr>
   <tr style="border:none;">
     <td colspan="2" align="center" style="padding:12px 4px 4px;border:none;background:transparent;">
-      <img src="https://streak-stats.demolab.com?user=nazarli-shabnam&amp;theme=tokyonight&amp;hide_border=true"
+      <img src="https://streak-stats.demolab.com/?user=nazarli-shabnam&amp;theme=tokyonight&amp;hide_border=true&amp;card_width=420&amp;card_height=165"
            alt="GitHub contribution streak"
-           style="width:100%;max-width:720px;height:auto;border:none;outline:none;box-shadow:none;border-radius:6px;" />
+           style="width:100%;max-width:420px;height:auto;border:none;outline:none;box-shadow:none;border-radius:6px;display:block;margin:0 auto;" />
     </td>
   </tr>
 </table>
