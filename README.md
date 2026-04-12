@@ -32,7 +32,7 @@ Public activity in the last **5 days**.
   <a href="my-badges/b-commit.md"><img src="my-badges/b-commit.svg" alt="One of my commit sha starts with &quot;b&quot;." title="One of my commit sha starts with &quot;b&quot;." width="64" /></a>
   <a href="my-badges/00-commit.md"><img src="my-badges/00-commit.svg" alt="Commit SHA starts with 00" title="Commit SHA starts with 00" width="64" /></a>
   <a href="my-badges/1571-commit.md"><img src="my-badges/1571-commit.svg" alt="1571 — historical commit" title="1571 — historical commit" width="64" /></a>
-  <a href="my-badges/stars-4.md"><img src="my-badges/stars-4.svg" alt="I collected 4 stars." title="I collected 53 stars." width="64" /></a>
+  <a href="my-badges/stars-4.md"><img src="my-badges/stars-4.svg" alt="I collected 4 stars." title="I collected 63 stars." width="64" /></a>
   <a href="my-badges/tp-survivor.md"><img src="my-badges/tp-survivor.svg" alt="I rolled before Covid-19: Survivor of the Great TP Shortage" title="I rolled before Covid-19: Survivor of the Great TP Shortage" width="64" /></a>
   <a href="my-badges/bd-commit.md"><img src="my-badges/bd-commit.svg" alt="I committed on my birthday." title="I committed on my birthday." width="64" /></a>
   <a href="my-badges/public-keys-2.md"><img src="my-badges/public-keys-2.svg" alt="I have 2 public keys." title="I have 2 public keys." width="64" /></a>
@@ -42,7 +42,7 @@ Public activity in the last **5 days**.
   <a href="my-badges/favorite-word-add.md"><img src="my-badges/favorite-word-add.svg" alt='My favorite commit word is "add".' title='My favorite commit word is &quot;add&quot;.' width="64" /></a>
   <a href="my-badges/allegedly-personality.md"><img src="my-badges/allegedly-personality.svg" alt="allegedly, i have a great personality" title="allegedly, i have a great personality" width="64" /></a>
   <a href="my-badges/first-issue.md"><img src="my-badges/first-issue.svg" alt="I opened my first GitHub issue." title="First GitHub issue — Devlaner/devlane#27" width="64" /></a>
-  <a href="my-badges/on-fire-ytd.md"><img src="my-badges/on-fire-ytd.svg" alt="on fire (YTD)" title="on fire (YTD 2026): 49" width="64" /></a>
+  <a href="my-badges/on-fire-ytd.md"><img src="my-badges/on-fire-ytd.svg" alt="on fire (YTD)" title="on fire (YTD 2026): 56" width="64" /></a>
 </p>
 <!-- my-badges end -->
 
