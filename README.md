@@ -22,7 +22,6 @@ Public activity in the last **5 days** (from GitHub’s public event feed — **
 - [Devlaner/devlane](https://github.com/Devlaner/devlane)
 - [Devlaner/clevis](https://github.com/Devlaner/clevis)
 
-_Links go to the repo, not individual commits._
 
 <!-- recent-repos end -->
 
