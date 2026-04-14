@@ -20,8 +20,8 @@ Public activity in the last **5 days** (from GitHub’s public event feed — **
 
 **Repos I’ve been active in:**
 
-- [nazarli-shabnam/git-explain](https://github.com/nazarli-shabnam/git-explain)
 - [Devlaner/devlane](https://github.com/Devlaner/devlane)
+- [nazarli-shabnam/git-explain](https://github.com/nazarli-shabnam/git-explain)
 - [Devlaner/clevis](https://github.com/Devlaner/clevis)
 
 _Links go to the repo, not individual commits._
