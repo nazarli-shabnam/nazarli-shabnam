@@ -26,7 +26,9 @@ jobs:
         run: |
           npm ci
 
+      # ── Badge generation (non-blocking) ──────────────────────────
       - name: Generate on-fire badge
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
@@ -37,6 +39,7 @@ jobs:
           node scripts/generate-on-fire.mjs
 
       - name: Generate stars badge
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
@@ -44,28 +47,44 @@ jobs:
           node scripts/generate-stars.mjs
 
       - name: Generate favorite word badge
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
         run: |
           node scripts/generate-favorite-word.mjs
 
+      # ── README updates (non-blocking) ──────────────────────────
       - name: Update README title attributes
+        continue-on-error: true
         run: |
           node scripts/update-readme-titles.mjs
 
-      - name: Update “recent repos” section (public activity, last 5 days)
+      - name: Update recent repos section (public activity, last 5 days)
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
         run: |
           node scripts/update-recent-repos.mjs
 
+      # ── Chess rendering (non-blocking) ─────────────────────────
       - name: Render chessboard (if enabled)
+        continue-on-error: true
         run: |
-          node -e "import('./scripts/chess/lib.mjs').then(async m=>{ const fs = await import('node:fs/promises'); const s = JSON.parse(await fs.readFile(m.STATE_PATH,'utf8')); process.env.CHESS_FEN = s.fen; process.env.CHESS_LAST_MOVE = JSON.stringify(s.lastMove || null); await import('./scripts/chess/render-board.mjs'); })"
+          node --input-type=module -e '
+            import { STATE_PATH } from "./scripts/chess/lib.mjs";
+            import fs from "node:fs/promises";
 
+            const state = JSON.parse(await fs.readFile(STATE_PATH, "utf8"));
+            process.env.CHESS_FEN = state.fen;
+            process.env.CHESS_LAST_MOVE = JSON.stringify(state.lastMove || null);
+            await import("./scripts/chess/render-board.mjs");
+          '
+
+      # ── GitHub stats cards (non-blocking) ──────────────────────
       - name: Generate GitHub stats card
+        continue-on-error: true
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
@@ -74,6 +93,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate Top Languages card
+        continue-on-error: true
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
@@ -81,6 +101,7 @@ jobs:
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      # ── Commit & push (only if something changed) ─────────────
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
