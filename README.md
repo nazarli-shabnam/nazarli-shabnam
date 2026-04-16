@@ -9,7 +9,7 @@
 
 ---
 
-[![committers.top badge](https://user-badge.committers.top/azerbaijan/USERNAME.svg)](https://user-badge.committers.top/azerbaijan/USERNAME)
+[![committers.top badge](https://user-badge.committers.top/azerbaijan/nazarli-shabnam.svg)](https://user-badge.committers.top/azerbaijan/nazarli-shabnam)
 
 ## 🚀 Recent Activity
 
