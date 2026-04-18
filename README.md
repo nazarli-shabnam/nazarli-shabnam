@@ -51,27 +51,17 @@ Public activity in the last **5 days**.
 
 ## 📊 Stats
 
-<table role="presentation" style="width:100%;max-width:760px;margin:0 auto;border-collapse:collapse;border-spacing:0;">
-  <tr style="border:none;">
-    <td align="center" style="width:60%;padding:4px;vertical-align:top;border:none;background:transparent;">
-      <img src="profile/stats.svg"
-           alt="GitHub stats"
-           style="width:400px;max-width:100%;height:auto;border:none;outline:none;box-shadow:none;border-radius:6px;" />
-    </td>
-    <td align="center" style="width:40%;padding:6px;vertical-align:top;border:none;background:transparent;">
-      <img src="profile/top-langs.svg"
-           alt="Top Languages"
-           style="width:300px;max-width:100%;height:auto;border:none;outline:none;box-shadow:none;border-radius:6px;" />
-    </td>
-  </tr>
-  <tr style="border:none;">
-    <td colspan="2" align="center" style="padding:12px 4px 4px;border:none;background:transparent;">
-      <img src="https://streak-stats.demolab.com/?user=nazarli-shabnam&amp;theme=tokyonight&amp;hide_border=true&amp;card_width=420&amp;card_height=165"
-           alt="GitHub contribution streak"
-           style="width:100%;max-width:420px;height:auto;border:none;outline:none;box-shadow:none;border-radius:6px;display:block;margin:0 auto;" />
-    </td>
-  </tr>
-</table>
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=nazarli-shabnam&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub stats" height="180" />
+&nbsp;&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nazarli-shabnam&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&count_private=true" alt="Top Languages" height="180" />
+
+<br/>
+
+<img src="https://streak-stats.demolab.com/?user=nazarli-shabnam&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D&card_width=500" alt="GitHub contribution streak" />
+
+</div>
 
 ---
 
