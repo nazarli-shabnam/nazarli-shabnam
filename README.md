@@ -53,9 +53,9 @@ Public activity in the last **5 days**.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=nazarli-shabnam&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub stats" height="180" />
+<img src="profile/stats.svg" alt="GitHub stats" height="180" />
 &nbsp;&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nazarli-shabnam&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&count_private=true" alt="Top Languages" height="180" />
+<img src="profile/top-langs.svg" alt="Top Languages" height="180" />
 
 <br/>
 
