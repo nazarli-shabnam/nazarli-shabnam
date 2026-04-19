@@ -1,6 +1,6 @@
 ---
 layout: default
 ---
-# I collected 95 stars.
+# I collected 98 stars.
 
-I have 95 stars across my repos.
+I have 98 stars across my repos.
