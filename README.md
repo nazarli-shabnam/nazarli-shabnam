@@ -18,6 +18,7 @@
 
 Public activity in the last **5 days**.
 
+- [Devlaner/devlane](https://github.com/Devlaner/devlane)
 - [nazarli-shabnam/rustdesk](https://github.com/nazarli-shabnam/rustdesk)
 
 <!-- recent-repos end -->
