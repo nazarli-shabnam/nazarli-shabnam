@@ -42,7 +42,7 @@ Public activity in the last **5 days**.
   <a href="my-badges/allegedly-personality.md"><img src="my-badges/allegedly-personality.svg" alt="allegedly, i have a great personality" title="allegedly, i have a great personality" width="64" /></a>
   <a href="my-badges/first-issue.md"><img src="my-badges/first-issue.svg" alt="I opened my first GitHub issue." title="First GitHub issue — Devlaner/devlane#27" width="64" /></a>
   <a href="https://github.com/Devlaner/devlane/pull/83"><img src="my-badges/longest-pr.svg" alt="Longest PR — Devlaner/devlane#83" title="My longest PR" width="64" /></a>
-  <a href="my-badges/on-fire-ytd.md"><img src="my-badges/on-fire-ytd.svg" alt="on fire (YTD)" title="on fire (YTD 2026): 83" width="64" /></a>
+  <a href="my-badges/on-fire-ytd.md"><img src="my-badges/on-fire-ytd.svg" alt="on fire (YTD)" title="on fire (YTD 2026): 84" width="64" /></a>
 </p>
 <!-- my-badges end -->
 
