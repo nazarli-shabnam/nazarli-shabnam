@@ -54,7 +54,25 @@ function extractInnerSvg(svgText) {
   return m ? m[1] : svgText;
 }
 
-function wrapBadgeSvg(innerSvg, title, starCount) {
+function starCountBadgeText(totalStars) {
+  if (totalStars < 100) return String(totalStars);
+  return `${Math.floor(totalStars / 100) * 100}+`;
+}
+
+function starBadgeCopy(totalStars) {
+  const badgeText = starCountBadgeText(totalStars);
+  const title =
+    totalStars < 100
+      ? `I collected ${totalStars} stars.`
+      : `I collected ${badgeText} stars.`;
+  const desc =
+    totalStars < 100
+      ? `I have ${totalStars} stars across my owned repositories (stargazers per repo, including forks — same idea as the stats card).`
+      : `I have ${badgeText} stars across my owned repositories (stargazers per repo, including forks — same idea as the stats card; about ${totalStars} total).`;
+  return { badgeText, title, desc };
+}
+
+function wrapBadgeSvg(innerSvg, title, displayText) {
   const W = 64,
     H = 64;
   const scale = 0.7; // Smaller scale to make room for number
@@ -63,10 +81,11 @@ function wrapBadgeSvg(innerSvg, title, starCount) {
   const inner =
     innerSvg ||
     `<text x="32" y="36" font-family="system-ui, -apple-system, Arial" font-size="16" fill="#fff" text-anchor="middle">?</text>`;
-  
-  // Add star count text below the star icon
-  const countText = `<text x="32" y="52" font-family="system-ui, -apple-system, Arial" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">${starCount}</text>`;
-  
+
+  const fontSize =
+    displayText.length >= 5 ? 12 : displayText.length >= 4 ? 14 : 16;
+  const countText = `<text x="32" y="52" font-family="system-ui, -apple-system, Arial" font-size="${fontSize}" fill="#fff" font-weight="700" text-anchor="middle">${escapeXml(displayText)}</text>`;
+
   return `<?xml version="1.0" encoding="utf-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">\n  <rect width="100%" height="100%" rx="8" fill="#111216"/>\n  <g transform="translate(${tx},${ty}) scale(${scale})">\n    ${inner}\n  </g>\n  ${countText}\n  <title>${escapeXml(title)}</title>\n</svg>`;
 }
 
@@ -76,12 +95,13 @@ function wrapBadgeSvg(innerSvg, title, starCount) {
   let hasMore = true;
   let cursor = null;
 
-  // GitHub GraphQL has pagination limits, so we need to fetch in batches
+  // Sum stargazers on every repo you own, including forks — matches github-readme-stats
+  // (that project does not set isFork: false). Excluding forks was why this badge lagged the stats card.
   while (hasMore) {
     const query = `
       query($login: String!, $cursor: String) {
         user(login: $login) {
-          repositories(ownerAffiliations: OWNER, isFork: false, first: 100, after: $cursor) {
+          repositories(ownerAffiliations: OWNER, first: 100, after: $cursor) {
             pageInfo {
               hasNextPage
               endCursor
@@ -112,9 +132,8 @@ function wrapBadgeSvg(innerSvg, title, starCount) {
   const starEmoji = await fetchOpenMoji("2B50");
   const innerSvg = extractInnerSvg(starEmoji);
 
-  const title = `I collected ${totalStars} stars.`;
-  const desc = `I have ${totalStars} stars across my repos.`;
-  const svg = wrapBadgeSvg(innerSvg, title, totalStars);
+  const { badgeText, title, desc } = starBadgeCopy(totalStars);
+  const svg = wrapBadgeSvg(innerSvg, title, badgeText);
   
   fs.writeFileSync(path.join(OUT_DIR, "stars-4.svg"), svg, "utf8");
   const md = `---\nlayout: default\n---\n# ${title}\n\n${desc}\n`;

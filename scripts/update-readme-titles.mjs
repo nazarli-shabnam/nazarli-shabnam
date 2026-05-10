@@ -25,9 +25,14 @@ function updateReadmeTitles() {
   
   const starsTitle = getBadgeTitle("stars-4");
   if (starsTitle) {
+    const escaped = starsTitle.replace(/"/g, "&quot;");
+    readme = readme.replace(
+      /(<img[^>]*stars-4\.svg[^>]*alt=")[^"]*(")/,
+      `$1${escaped}$2`
+    );
     readme = readme.replace(
       /(<img[^>]*stars-4\.svg[^>]*title=")[^"]*(")/,
-      `$1${starsTitle.replace(/"/g, "&quot;")}$2`
+      `$1${escaped}$2`
     );
   }
   
