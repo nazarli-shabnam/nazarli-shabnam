@@ -21,8 +21,6 @@ Public activity in the last **5 days**.
 - [Nazm-AI/open-hikmah](https://github.com/Nazm-AI/open-hikmah)
 - [nazarli-shabnam/my-portfolio](https://github.com/nazarli-shabnam/my-portfolio)
 - [Devlaner/devlane](https://github.com/Devlaner/devlane)
-- [nazarli-shabnam/clevis](https://github.com/nazarli-shabnam/clevis)
-- [Nazm-AI/.github](https://github.com/Nazm-AI/.github)
 
 <!-- recent-repos end -->
 
