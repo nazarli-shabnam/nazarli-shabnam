@@ -18,6 +18,10 @@
 
 Public activity in the last **5 days**.
 
+- [Devlaner/devlane](https://github.com/Devlaner/devlane)
+- [nazarli-shabnam/claude-reset](https://github.com/nazarli-shabnam/claude-reset)
+- [OpenHikmah/openhikmah-web](https://github.com/OpenHikmah/openhikmah-web)
+- [nazarli-shabnam/openhuman](https://github.com/nazarli-shabnam/openhuman)
 - [tinyhumansai/openhuman](https://github.com/tinyhumansai/openhuman)
 
 <!-- recent-repos end -->
