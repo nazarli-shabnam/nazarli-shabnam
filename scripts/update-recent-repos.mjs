@@ -103,9 +103,45 @@ async function collectRecentRepos() {
     if (events.length < 100) break;
   }
 
-  return [...lastSeen.entries()]
-    .sort((a, b) => b[1] - a[1])
-    .map(([name]) => name);
+  return dedupeByBasename(lastSeen);
+}
+
+/**
+ * Collapses same-named repos (e.g. a fork and its upstream) into one entry,
+ * preferring the non-own (upstream/third-party) repo over the user's own fork.
+ * @param {Map<string, number>} lastSeen
+ */
+function dedupeByBasename(lastSeen) {
+  /** @type {Map<string, { fullName: string, ts: number, isOwnRepo: boolean }>} */
+  const byBasename = new Map();
+
+  for (const [fullName, ts] of lastSeen.entries()) {
+    const basename = fullName.split("/").pop()?.toLowerCase() || fullName;
+    const isOwnRepo = fullName.split("/")[0]?.toLowerCase() === USERNAME.toLowerCase();
+
+    const existing = byBasename.get(basename);
+    if (!existing) {
+      byBasename.set(basename, { fullName, ts, isOwnRepo });
+      continue;
+    }
+
+    const mergedTs = Math.max(existing.ts, ts);
+
+    if (existing.isOwnRepo && !isOwnRepo) {
+      byBasename.set(basename, { fullName, ts: mergedTs, isOwnRepo });
+    } else if (!existing.isOwnRepo && isOwnRepo) {
+      byBasename.set(basename, { ...existing, ts: mergedTs });
+    } else {
+      byBasename.set(
+        basename,
+        ts > existing.ts ? { fullName, ts: mergedTs, isOwnRepo } : { ...existing, ts: mergedTs }
+      );
+    }
+  }
+
+  return [...byBasename.values()]
+    .sort((a, b) => b.ts - a.ts)
+    .map((e) => e.fullName);
 }
 
 function buildBlock(repos) {
