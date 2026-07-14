@@ -18,7 +18,6 @@
 
 Public activity in the last **5 days**.
 
-- [martian56/venx](https://github.com/martian56/venx)
 - [OpenHikmah/openhikmah-web](https://github.com/OpenHikmah/openhikmah-web)
 - [nazarli-shabnam/clevis](https://github.com/nazarli-shabnam/clevis)
 - [Devlaner/devlane](https://github.com/Devlaner/devlane)
