@@ -83,14 +83,19 @@ jobs:
           '
 
       # ── GitHub stats cards (non-blocking) ──────────────────────
+      # readme-tools/github-readme-stats-action's "stats" card runs one
+      # combined GraphQL query for everything; for this account, several of
+      # its fields are cheap alone but trip RESOURCE_LIMITS_EXCEEDED when
+      # fetched together (not a rate-limit issue — retrying/PATs don't help).
+      # generate-stats-card.mjs fetches the same data as a few small, safe
+      # queries instead. Top Languages is unaffected and keeps using the action.
       - name: Generate GitHub stats card
         continue-on-error: true
-        uses: readme-tools/github-readme-stats-action@v1
-        with:
-          card: stats
-          options: "username=${{ github.repository_owner }}&&show_icons=true&&theme=tokyonight&&hide_border=true"
-          path: profile/stats.svg
-          token: ${{ secrets.CONTRIBUTIONS_PAT || secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.CONTRIBUTIONS_PAT || secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+        run: |
+          node scripts/generate-stats-card.mjs
 
       - name: Generate Top Languages card
         continue-on-error: true
@@ -100,6 +105,16 @@ jobs:
           options: "username=${{ github.repository_owner }}&&layout=compact&&theme=tokyonight&&hide_border=true"
           path: profile/top-langs.svg
           token: ${{ secrets.CONTRIBUTIONS_PAT || secrets.GITHUB_TOKEN }}
+
+      # Guard against the Top Languages action still writing an error card
+      # (e.g. transient rate limiting) — never let that overwrite a good one.
+      - name: Discard top-langs card if it rendered as an error
+        if: always()
+        run: |
+          if [ -f profile/top-langs.svg ] && grep -q "Something went wrong" profile/top-langs.svg; then
+            echo "profile/top-langs.svg rendered an error card; keeping previous version."
+            git checkout -- profile/top-langs.svg || rm -f profile/top-langs.svg
+          fi
 
       # ── Commit & push (only if something changed) ─────────────
       - name: Commit changes

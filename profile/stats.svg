@@ -1,15 +1,30 @@
-
-    <svg width="576.5"  height="120" viewBox="0 0 576.5 120" fill="#1a1b27" xmlns="http://www.w3.org/2000/svg">
-    <style>
-    .text { font: 600 16px 'Segoe UI', Ubuntu, Sans-Serif; fill: #70a5fd }
-    .small { font: 600 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #38bdae }
-    .gray { fill: #858585 }
-    </style>
-    <rect x="0.5" y="0.5" width="575.5" height="99%" rx="4.5" fill="#1a1b27" stroke="#e4e2e2"/>
-    <text x="25" y="45" class="text">Something went wrong! file an issue at https://tiny.one/readme-stats</text>
-    <text data-testid="message" x="25" y="55" class="text small">
-      <tspan x="25" dy="18">Resource limits for this query exceeded.</tspan>
-      <tspan x="25" dy="18" class="gray">OK</tspan>
-    </text>
-    </svg>
+<svg width="300" height="180" viewBox="0 0 300 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #70a5fd; }
+    .label { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #38bdae; }
+    .value { font: 600 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #ffffff; }
+  </style>
+  <rect data-testid="card-bg" x="0.5" y="0.5" rx="4.5" width="299" height="179" fill="#1a1b27" stroke="#e4e2e2" stroke-opacity="0"/>
+  <text x="25" y="30" class="header">nazarli-shabnam's GitHub Stats</text>
   
+    <g transform="translate(25, 55)">
+      <text class="label" x="0" y="0">Total Stars</text>
+      <text class="value" x="250" y="0" text-anchor="end">554</text>
+    </g>
+    <g transform="translate(25, 80)">
+      <text class="label" x="0" y="0">Total Commits</text>
+      <text class="value" x="250" y="0" text-anchor="end">2052</text>
+    </g>
+    <g transform="translate(25, 105)">
+      <text class="label" x="0" y="0">Total PRs</text>
+      <text class="value" x="250" y="0" text-anchor="end">612</text>
+    </g>
+    <g transform="translate(25, 130)">
+      <text class="label" x="0" y="0">Total Issues</text>
+      <text class="value" x="250" y="0" text-anchor="end">481</text>
+    </g>
+    <g transform="translate(25, 155)">
+      <text class="label" x="0" y="0">Followers</text>
+      <text class="value" x="250" y="0" text-anchor="end">54</text>
+    </g>
+</svg>
