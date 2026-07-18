@@ -50,6 +50,13 @@ async function fetchPublicEventsPage(page) {
   }
 
   const res = await fetch(url, { headers });
+  if (res.status === 422) {
+    // GitHub only reliably paginates the first ~300 public events for this endpoint;
+    // beyond that it 422s instead of returning an empty page. Treat as end-of-data.
+    const text = await res.text();
+    if (/pagination is limited/i.test(text)) return [];
+    throw new Error(`GitHub API ${res.status}: ${text.slice(0, 500)}`);
+  }
   if (!res.ok) {
     const text = await res.text();
     throw new Error(`GitHub API ${res.status}: ${text.slice(0, 500)}`);

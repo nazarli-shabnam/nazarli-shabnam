@@ -90,7 +90,7 @@ jobs:
           card: stats
           options: "username=${{ github.repository_owner }}&&show_icons=true&&theme=tokyonight&&hide_border=true"
           path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.CONTRIBUTIONS_PAT || secrets.GITHUB_TOKEN }}
 
       - name: Generate Top Languages card
         continue-on-error: true
@@ -99,7 +99,7 @@ jobs:
           card: top-langs
           options: "username=${{ github.repository_owner }}&&layout=compact&&theme=tokyonight&&hide_border=true"
           path: profile/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.CONTRIBUTIONS_PAT || secrets.GITHUB_TOKEN }}
 
       # ── Commit & push (only if something changed) ─────────────
       - name: Commit changes
