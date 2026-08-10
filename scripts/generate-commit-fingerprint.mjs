@@ -68,7 +68,7 @@ async function fetchCommits() {
     const query = `
       query($login: String!, $repoCursor: String) {
         user(login: $login) {
-          repositories(ownerAffiliations: OWNER, isFork: false, first: 20, after: $repoCursor, orderBy: { field: PUSHED_AT, direction: DESC }) {
+          repositories(ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC, first: 20, after: $repoCursor, orderBy: { field: PUSHED_AT, direction: DESC }) {
             pageInfo { hasNextPage endCursor }
             nodes {
               name
