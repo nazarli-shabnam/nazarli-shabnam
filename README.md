@@ -50,29 +50,23 @@ Public activity in the last **5 days**.
 ## 📊 Stats
 
 <div align="center">
+<br/><br/>
 
-<img src="profile/stats.svg" alt="GitHub stats" height="180" />
+<img src="profile/stats.svg" alt="GitHub stats" height="185" />
 &nbsp;&nbsp;
-<img src="profile/top-langs.svg" alt="Top Languages" height="180" />
+<img src="profile/top-langs.svg" alt="Top Languages" height="185" />
 
 <br/>
 
 <img src="https://streak-stats.demolab.com/?user=nazarli-shabnam&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D&card_width=500" alt="GitHub contribution streak" />
 
+<br/><br/>
+
+<img src="profile/fingerprint-constellation.svg" alt="Commit Fingerprint" width="340" />
+
 </div>
 
 ---
-
-## 🎮 Play Chess with Me
-
-It’s an **open chess game** — anyone can play by opening an issue.
-
-- **Make a move**: open an issue titled `chess: e2e4` (also supports `chess: move e2 to e4`)
-- **Rules**: strict chess legality (check, castling, en passant, promotion, etc.)
-
-<p align="center">
-  <img src="chess/chessboard.svg" alt="Open chess board" width="520" />
-</p>
 
 <!-- ## 🎧 Now Playing
 ![Spotify Playing](https://spotify-github-profile.vercel.app/api/view?uid=314dwcjemtfzwdygc76qr4ya5yhq&cover_image=true&theme=novatorem) -->

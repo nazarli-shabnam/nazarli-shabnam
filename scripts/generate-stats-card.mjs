@@ -111,37 +111,52 @@ function escapeXml(s) {
     .replace(/"/g, "&quot;");
 }
 
+// Unified Tokyo Night palette — matches theme=tokyonight already used by the
+// streak card and Top Languages card, and the badge/fingerprint SVGs.
+const PALETTE = {
+  bg: "#1a1b26",
+  border: "#3b4261",
+  text: "#c0caf5",
+  dim: "#565f89",
+  blue: "#7aa2f7",
+};
+
 function statsCardSvg(stats) {
   const rows = [
-    ["Total Stars", stats.stars],
-    ["Total Commits", stats.commits],
-    ["Total PRs", stats.prs],
-    ["Total Issues", stats.issues],
-    ["Followers", stats.followers],
+    ["Total Stars", stats.stars, "#e0af68"],
+    ["Total Commits", stats.commits, "#7aa2f7"],
+    ["Total PRs", stats.prs, "#bb9af7"],
+    ["Total Issues", stats.issues, "#9ece6a"],
+    ["Followers", stats.followers, "#f7768e"],
   ];
 
   const W = 300;
-  const rowHeight = 25;
-  const H = 55 + rows.length * rowHeight;
+  const rowHeight = 27;
+  const headerH = 54;
+  const H = headerH + rows.length * rowHeight + 14;
 
   const rowsSvg = rows
     .map(
       (row, i) => `
-    <g transform="translate(25, ${55 + i * rowHeight})">
+    <g transform="translate(26, ${headerH + i * rowHeight})">
+      <circle cx="-10" cy="-4" r="3" fill="${row[2]}"/>
       <text class="label" x="0" y="0">${escapeXml(row[0])}</text>
-      <text class="value" x="${W - 50}" y="0" text-anchor="end">${escapeXml(row[1])}</text>
+      <text class="value" x="${W - 52}" y="0" text-anchor="end">${escapeXml(row[1])}</text>
     </g>`
     )
     .join("");
 
   return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #70a5fd; }
-    .label { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #38bdae; }
-    .value { font: 600 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #ffffff; }
+    .header { font: 600 16px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${PALETTE.text}; }
+    .subhead { font: 400 11px 'Segoe UI', Ubuntu, Sans-Serif; letter-spacing: 0.06em; fill: ${PALETTE.dim}; text-transform: uppercase; }
+    .label { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${PALETTE.dim}; }
+    .value { font: 600 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${PALETTE.text}; font-variant-numeric: tabular-nums; }
   </style>
-  <rect data-testid="card-bg" x="0.5" y="0.5" rx="4.5" width="${W - 1}" height="${H - 1}" fill="#1a1b27" stroke="#e4e2e2" stroke-opacity="0"/>
-  <text x="25" y="30" class="header">${escapeXml(USERNAME)}'s GitHub Stats</text>
+  <rect data-testid="card-bg" x="0.5" y="0.5" rx="8" width="${W - 1}" height="${H - 1}" fill="${PALETTE.bg}" stroke="${PALETTE.border}"/>
+  <text x="26" y="26" class="header">${escapeXml(USERNAME)}</text>
+  <text x="26" y="41" class="subhead">GITHUB STATS</text>
+  <line x1="26" y1="${headerH - 10}" x2="${W - 26}" y2="${headerH - 10}" stroke="${PALETTE.border}"/>
   ${rowsSvg}
 </svg>`;
 }

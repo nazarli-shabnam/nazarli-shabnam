@@ -80,13 +80,13 @@ function wrapBadgeSvg(innerSvg, title, displayText) {
   const ty = (H - H * scale) / 2 - 4; // Shift up a bit
   const inner =
     innerSvg ||
-    `<text x="32" y="36" font-family="system-ui, -apple-system, Arial" font-size="16" fill="#fff" text-anchor="middle">?</text>`;
+    `<text x="32" y="36" font-family="system-ui, -apple-system, Arial" font-size="16" fill="#c0caf5" text-anchor="middle">?</text>`;
 
   const fontSize =
     displayText.length >= 5 ? 12 : displayText.length >= 4 ? 14 : 16;
-  const countText = `<text x="32" y="52" font-family="system-ui, -apple-system, Arial" font-size="${fontSize}" fill="#fff" font-weight="700" text-anchor="middle">${escapeXml(displayText)}</text>`;
+  const countText = `<text x="32" y="52" font-family="system-ui, -apple-system, Arial" font-size="${fontSize}" fill="#c0caf5" font-weight="700" text-anchor="middle">${escapeXml(displayText)}</text>`;
 
-  return `<?xml version="1.0" encoding="utf-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">\n  <rect width="100%" height="100%" rx="8" fill="#111216"/>\n  <g transform="translate(${tx},${ty}) scale(${scale})">\n    ${inner}\n  </g>\n  ${countText}\n  <title>${escapeXml(title)}</title>\n</svg>`;
+  return `<?xml version="1.0" encoding="utf-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">\n  <rect width="100%" height="100%" rx="8" fill="#1a1b26"/>\n  <g transform="translate(${tx},${ty}) scale(${scale})">\n    ${inner}\n  </g>\n  ${countText}\n  <title>${escapeXml(title)}</title>\n</svg>`;
 }
 
 (async function main() {

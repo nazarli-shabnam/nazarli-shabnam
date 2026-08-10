@@ -1,30 +1,38 @@
-<svg width="300" height="180" viewBox="0 0 300 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="300" height="203" viewBox="0 0 300 203" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #70a5fd; }
-    .label { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #38bdae; }
-    .value { font: 600 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #ffffff; }
+    .header { font: 600 16px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c0caf5; }
+    .subhead { font: 400 11px 'Segoe UI', Ubuntu, Sans-Serif; letter-spacing: 0.06em; fill: #565f89; text-transform: uppercase; }
+    .label { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #565f89; }
+    .value { font: 600 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c0caf5; font-variant-numeric: tabular-nums; }
   </style>
-  <rect data-testid="card-bg" x="0.5" y="0.5" rx="4.5" width="299" height="179" fill="#1a1b27" stroke="#e4e2e2" stroke-opacity="0"/>
-  <text x="25" y="30" class="header">nazarli-shabnam's GitHub Stats</text>
+  <rect data-testid="card-bg" x="0.5" y="0.5" rx="8" width="299" height="202" fill="#1a1b26" stroke="#3b4261"/>
+  <text x="26" y="26" class="header">nazarli-shabnam</text>
+  <text x="26" y="41" class="subhead">GITHUB STATS</text>
+  <line x1="26" y1="44" x2="274" y2="44" stroke="#3b4261"/>
   
-    <g transform="translate(25, 55)">
+    <g transform="translate(26, 54)">
+      <circle cx="-10" cy="-4" r="3" fill="#e0af68"/>
       <text class="label" x="0" y="0">Total Stars</text>
-      <text class="value" x="250" y="0" text-anchor="end">578</text>
+      <text class="value" x="248" y="0" text-anchor="end">578</text>
     </g>
-    <g transform="translate(25, 80)">
+    <g transform="translate(26, 81)">
+      <circle cx="-10" cy="-4" r="3" fill="#7aa2f7"/>
       <text class="label" x="0" y="0">Total Commits</text>
-      <text class="value" x="250" y="0" text-anchor="end">3824</text>
+      <text class="value" x="248" y="0" text-anchor="end">2374</text>
     </g>
-    <g transform="translate(25, 105)">
+    <g transform="translate(26, 108)">
+      <circle cx="-10" cy="-4" r="3" fill="#bb9af7"/>
       <text class="label" x="0" y="0">Total PRs</text>
-      <text class="value" x="250" y="0" text-anchor="end">454</text>
+      <text class="value" x="248" y="0" text-anchor="end">769</text>
     </g>
-    <g transform="translate(25, 130)">
+    <g transform="translate(26, 135)">
+      <circle cx="-10" cy="-4" r="3" fill="#9ece6a"/>
       <text class="label" x="0" y="0">Total Issues</text>
-      <text class="value" x="250" y="0" text-anchor="end">360</text>
+      <text class="value" x="248" y="0" text-anchor="end">630</text>
     </g>
-    <g transform="translate(25, 155)">
+    <g transform="translate(26, 162)">
+      <circle cx="-10" cy="-4" r="3" fill="#f7768e"/>
       <text class="label" x="0" y="0">Followers</text>
-      <text class="value" x="250" y="0" text-anchor="end">57</text>
+      <text class="value" x="248" y="0" text-anchor="end">57</text>
     </g>
 </svg>

@@ -68,19 +68,14 @@ jobs:
         run: |
           node scripts/update-recent-repos.mjs
 
-      # ── Chess rendering (non-blocking) ─────────────────────────
-      - name: Render chessboard (if enabled)
+      - name: Generate commit fingerprint art
         continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+          CONTRIBUTIONS_PAT: ${{ secrets.CONTRIBUTIONS_PAT }}
         run: |
-          node --input-type=module -e '
-            import { STATE_PATH } from "./scripts/chess/lib.mjs";
-            import fs from "node:fs/promises";
-
-            const state = JSON.parse(await fs.readFile(STATE_PATH, "utf8"));
-            process.env.CHESS_FEN = state.fen;
-            process.env.CHESS_LAST_MOVE = JSON.stringify(state.lastMove || null);
-            await import("./scripts/chess/render-board.mjs");
-          '
+          node scripts/generate-commit-fingerprint.mjs
 
       # ── GitHub stats cards (non-blocking) ──────────────────────
       # readme-tools/github-readme-stats-action's "stats" card runs one
@@ -121,7 +116,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add my-badges/on-fire-ytd.svg my-badges/on-fire-ytd.md my-badges/stars-4.svg my-badges/stars-4.md my-badges/favorite-word-add.svg my-badges/favorite-word-add.md profile/stats.svg profile/top-langs.svg chess/chessboard.svg chess/state.json README.md || true
+          git add my-badges/on-fire-ytd.svg my-badges/on-fire-ytd.md my-badges/stars-4.svg my-badges/stars-4.md my-badges/favorite-word-add.svg my-badges/favorite-word-add.md profile/stats.svg profile/top-langs.svg profile/fingerprint-constellation.svg README.md || true
           if ! git diff --staged --quiet; then
             git commit -m "chore: update dynamic badges" || true
             git push
