@@ -1,6 +1,6 @@
 ---
 layout: default
 ---
-# I collected 500+ stars.
+# I collected 300+ stars.
 
-I have 500+ stars across my owned repositories (stargazers per repo, including forks — same idea as the stats card; about 578 total).
+Stargazer total across owned repos.

@@ -50,10 +50,12 @@ Public activity in the last **5 days**.
 ## 📊 Stats
 
 <div align="center">
+<sub>Numbers pulled live from the GitHub API — same Tokyo Night palette throughout.</sub>
+<br/><br/>
 
-<img src="profile/stats.svg" alt="GitHub stats" height="180" />
+<img src="profile/stats.svg" alt="GitHub stats" height="185" />
 &nbsp;&nbsp;
-<img src="profile/top-langs.svg" alt="Top Languages" height="180" />
+<img src="profile/top-langs.svg" alt="Top Languages" height="185" />
 
 <br/>
 
@@ -63,16 +65,23 @@ Public activity in the last **5 days**.
 
 ---
 
-## 🎮 Play Chess with Me
+## 🫆 Commit Fingerprint
 
-It’s an **open chess game** — anyone can play by opening an issue.
+A generative mark rendered from my own commit history — hashes and timestamps, not a template.
+Regenerated nightly from real data, same pipeline as the badges above. Comparing two directions below.
 
-- **Make a move**: open an issue titled `chess: e2e4` (also supports `chess: move e2 to e4`)
-- **Rules**: strict chess legality (check, castling, en passant, promotion, etc.)
-
-<p align="center">
-  <img src="chess/chessboard.svg" alt="Open chess board" width="520" />
-</p>
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <img src="profile/fingerprint-constellation.svg" alt="Commit Fingerprint — Constellation" width="360" /><br/>
+      <sub><b>Option A — Constellation</b></sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="profile/fingerprint-radial-rings.svg" alt="Commit Fingerprint — Radial Rings" width="360" /><br/>
+      <sub><b>Option B — Radial Rings</b></sub>
+    </td>
+  </tr>
+</table>
 
 <!-- ## 🎧 Now Playing
 ![Spotify Playing](https://spotify-github-profile.vercel.app/api/view?uid=314dwcjemtfzwdygc76qr4ya5yhq&cover_image=true&theme=novatorem) -->

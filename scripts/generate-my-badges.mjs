@@ -34,8 +34,8 @@ function wrapBadgeSvg(innerSvg, title) {
   const ty = (H - W * scale) / 2;
   const inner =
     innerSvg ||
-    `<text x="32" y="36" font-family="system-ui, -apple-system, Arial" font-size="16" fill="#fff" text-anchor="middle">?</text>`;
-  return `<?xml version="1.0" encoding="utf-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">\n  <rect width="100%" height="100%" rx="8" fill="#111216"/>\n  <g transform="translate(${tx},${ty}) scale(${scale})">\n    ${inner}\n  </g>\n  <title>${escapeXml(title)}</title>\n</svg>`;
+    `<text x="32" y="36" font-family="system-ui, -apple-system, Arial" font-size="16" fill="#c0caf5" text-anchor="middle">?</text>`;
+  return `<?xml version="1.0" encoding="utf-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">\n  <rect width="100%" height="100%" rx="8" fill="#1a1b26"/>\n  <g transform="translate(${tx},${ty}) scale(${scale})">\n    ${inner}\n  </g>\n  <title>${escapeXml(title)}</title>\n</svg>`;
 }
 
 function escapeXml(s) {

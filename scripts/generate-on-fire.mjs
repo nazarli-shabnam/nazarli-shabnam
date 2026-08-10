@@ -70,7 +70,7 @@ function svgBadge(onFireCount, year) {
   const n = String(onFireCount);
   const numFont = n.length > 2 ? 14 : n.length > 1 ? 18 : 22;
   const title = `on fire (YTD ${year}): ${onFireCount}`;
-  return `<?xml version="1.0" encoding="utf-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">\n  <rect width="100%" height="100%" rx="8" fill="#111216"/>\n  <text x="16" y="40" font-family="system-ui, -apple-system, Arial" font-size="28" fill="#ff7b7b">${escapeXml(flame)}</text>\n  <text x="44" y="46" font-family="system-ui, -apple-system, Arial" font-size="${numFont}" fill="#fff" font-weight="700" text-anchor="middle">${escapeXml(n)}</text>\n  <title>${escapeXml(title)}</title>\n</svg>`;
+  return `<?xml version="1.0" encoding="utf-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">\n  <rect width="100%" height="100%" rx="8" fill="#1a1b26"/>\n  <text x="16" y="40" font-family="system-ui, -apple-system, Arial" font-size="28" fill="#f7768e">${escapeXml(flame)}</text>\n  <text x="44" y="46" font-family="system-ui, -apple-system, Arial" font-size="${numFont}" fill="#c0caf5" font-weight="700" text-anchor="middle">${escapeXml(n)}</text>\n  <title>${escapeXml(title)}</title>\n</svg>`;
 }
 
 (async function main() {
