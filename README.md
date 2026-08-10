@@ -50,18 +50,19 @@ Public activity in the last **5 days**.
 ## 📊 Stats
 
 <div align="center">
-<sub>Numbers pulled live from the GitHub API — same Tokyo Night palette throughout.</sub>
 <br/><br/>
 
 <img src="profile/stats.svg" alt="GitHub stats" height="185" />
 &nbsp;&nbsp;
 <img src="profile/top-langs.svg" alt="Top Languages" height="185" />
-&nbsp;&nbsp;
-<img src="profile/fingerprint-constellation.svg" alt="Commit Fingerprint" height="185" />
 
 <br/>
 
 <img src="https://streak-stats.demolab.com/?user=nazarli-shabnam&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D&card_width=500" alt="GitHub contribution streak" />
+
+<br/><br/>
+
+<img src="profile/fingerprint-constellation.svg" alt="Commit Fingerprint" width="340" />
 
 </div>
 
