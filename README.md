@@ -56,6 +56,8 @@ Public activity in the last **5 days**.
 <img src="profile/stats.svg" alt="GitHub stats" height="185" />
 &nbsp;&nbsp;
 <img src="profile/top-langs.svg" alt="Top Languages" height="185" />
+&nbsp;&nbsp;
+<img src="profile/fingerprint-constellation.svg" alt="Commit Fingerprint" height="185" />
 
 <br/>
 
@@ -64,24 +66,6 @@ Public activity in the last **5 days**.
 </div>
 
 ---
-
-## 🫆 Commit Fingerprint
-
-A generative mark rendered from my own commit history — hashes and timestamps, not a template.
-Regenerated nightly from real data, same pipeline as the badges above. Comparing two directions below.
-
-<table align="center">
-  <tr>
-    <td align="center" width="50%">
-      <img src="profile/fingerprint-constellation.svg" alt="Commit Fingerprint — Constellation" width="360" /><br/>
-      <sub><b>Option A — Constellation</b></sub>
-    </td>
-    <td align="center" width="50%">
-      <img src="profile/fingerprint-radial-rings.svg" alt="Commit Fingerprint — Radial Rings" width="360" /><br/>
-      <sub><b>Option B — Radial Rings</b></sub>
-    </td>
-  </tr>
-</table>
 
 <!-- ## 🎧 Now Playing
 ![Spotify Playing](https://spotify-github-profile.vercel.app/api/view?uid=314dwcjemtfzwdygc76qr4ya5yhq&cover_image=true&theme=novatorem) -->
