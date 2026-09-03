@@ -61,10 +61,6 @@ Public activity in the last **5 days**.
 
 <img src="https://streak-stats.demolab.com/?user=nazarli-shabnam&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D&card_width=500" alt="GitHub contribution streak" />
 
-<br/><br/>
-
-<img src="profile/fingerprint-constellation.svg" alt="Commit Fingerprint" width="340" />
-
 </div>
 
 ---

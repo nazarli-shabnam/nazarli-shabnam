@@ -112,7 +112,7 @@ function escapeXml(s) {
 }
 
 // Unified Tokyo Night palette — matches theme=tokyonight already used by the
-// streak card and Top Languages card, and the badge/fingerprint SVGs.
+// streak card and Top Languages card, and the badge SVGs.
 const PALETTE = {
   bg: "#1a1b26",
   border: "#3b4261",
