@@ -18,8 +18,9 @@
 
 Public activity in the last **5 days**.
 
-- [OpenHikmah/openhikmah-web](https://github.com/OpenHikmah/openhikmah-web)
+- [nazarli-shabnam/podcast-aggregator-api](https://github.com/nazarli-shabnam/podcast-aggregator-api)
 - [nazarli-shabnam/clevis](https://github.com/nazarli-shabnam/clevis)
+- [OpenHikmah/openhikmah-web](https://github.com/OpenHikmah/openhikmah-web)
 
 <!-- recent-repos end -->
 
@@ -43,7 +44,7 @@ Public activity in the last **5 days**.
   <a href="my-badges/allegedly-personality.md"><img src="my-badges/allegedly-personality.svg" alt="allegedly, i have a great personality" title="allegedly, i have a great personality" width="64" /></a>
   <a href="my-badges/first-issue.md"><img src="my-badges/first-issue.svg" alt="I opened my first GitHub issue." title="First GitHub issue — Devlaner/devlane#27" width="64" /></a>
   <a href="https://github.com/Devlaner/devlane/pull/83"><img src="my-badges/longest-pr.svg" alt="Longest PR — Devlaner/devlane#83" title="My longest PR" width="64" /></a>
-  <a href="my-badges/on-fire-ytd.md"><img src="my-badges/on-fire-ytd.svg" alt="on fire (YTD)" title="on fire (YTD 2026): 202" width="64" /></a>
+  <a href="my-badges/on-fire-ytd.md"><img src="my-badges/on-fire-ytd.svg" alt="on fire (YTD)" title="on fire (YTD 2026): 203" width="64" /></a>
 </p>
 <!-- my-badges end -->
 
