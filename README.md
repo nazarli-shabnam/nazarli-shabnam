@@ -18,8 +18,8 @@
 
 Public activity in the last **5 days**.
 
-- [nazarli-shabnam/clevis](https://github.com/nazarli-shabnam/clevis)
 - [OpenHikmah/openhikmah-web](https://github.com/OpenHikmah/openhikmah-web)
+- [nazarli-shabnam/clevis](https://github.com/nazarli-shabnam/clevis)
 - [nazarli-shabnam/git-explain](https://github.com/nazarli-shabnam/git-explain)
 
 <!-- recent-repos end -->
