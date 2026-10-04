@@ -18,8 +18,8 @@
 
 Public activity in the last **5 days**.
 
-- [prettier/prettier](https://github.com/prettier/prettier)
 - [nazarli-shabnam/clevis](https://github.com/nazarli-shabnam/clevis)
+- [prettier/prettier](https://github.com/prettier/prettier)
 - [OpenHikmah/openhikmah-web](https://github.com/OpenHikmah/openhikmah-web)
 - [nazarli-shabnam/coolify](https://github.com/nazarli-shabnam/coolify)
 
