@@ -1,6 +1,6 @@
 ---
 layout: default
 ---
-# My favorite commit word is "chore".
+# My favorite commit word is "feat".
 
-My favorite commit message word is 'chore' (appears 58 times).
+My favorite commit message word is 'feat' (appears 57 times).
